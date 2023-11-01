@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+header {
+  height: 103px;
+}
+header .book-wrapper,
+header .global-menu,
+header .lang {
+  display: none;
+}
+header .btn-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+header .btn-wrapper .book-btn,
+header .btn-wrapper .menu-btn {
+  padding: 0 16px;
+}
+header h1 {
+  text-indent: -9999px;
+  padding: 16px;
+  background: url(../images/index/logo-main.svg) no-repeat 50%;
+}

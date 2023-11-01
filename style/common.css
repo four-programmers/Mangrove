@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/***** 변수 *****/
+:root {
+  /* font-family */
+  --main-font: “Noto Sans KR”, -apple-system, BlinkMacSystemFont, "Malgun Gothic", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --point-font: “Work Sans”, -apple-system, BlinkMacSystemFont, "Malgun Gothic", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+  /* mobile-font-size */
+  --main-font-16: 1rem;
+  --main-font-title: 1.46484375rem;
+  --main-font-midium: 1.055rem;
+  --main-font-sall: 0.938rem;
+  --small-font-14: 0.875rem;
+  ---font-: 1rem;
+  --lage-font-18: 1.125rem;
+  --mb-font-20: 1.25rem;
+  --mb-font-24: 1.5rem;
+
+  /* pc-font-size */
+  --pc-font-15: 0.938rem;
+  --pc-font-14: 0.875rem;
+  --pc-font-16: 1rem;
+  --pc-font-18: 1.125rem;
+  --pc-font-20: 1.25rem;
+  --pc-font-24: 1.5rem;
+
+  /* color */
+  --main-color: #212529;
+  --color-light-gray: #e9ecef;
+  --color-dark-gray: #adb5bd;
+  --color-layer: #1abc9c;
+}
