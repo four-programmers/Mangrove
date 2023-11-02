@@ -1,0 +1,10 @@
+@charset "utf-8";
+.post {
+  cursor: pointer;
+}
+.post-interview {
+  display: none;
+}
+.post.active {
+  display: none;
+}
