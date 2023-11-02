@@ -1,10 +1,14 @@
 @charset "UTF-8";
 
+/***** font *****/
+/* 'Noto Sans Korean', 'Work Sans' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;900&family=Work+Sans:wght@500;600;700;900&display=swap');
+
 /***** 변수 *****/
 :root {
   /* font-family */
-  --main-font: “Noto Sans KR”, -apple-system, BlinkMacSystemFont, "Malgun Gothic", helvetica, "Apple SD Gothic Neo", sans-serif;
-  --point-font: “Work Sans”, -apple-system, BlinkMacSystemFont, "Malgun Gothic", helvetica, "Apple SD Gothic Neo", sans-serif;
+  --font-ko: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', helvetica, 'Apple SD Gothic Neo', sans-serif;
+  --font-en: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', helvetica, 'Apple SD Gothic Neo', sans-serif;
 
   /* mobile-font-size */
   --title-font-lage: 2.625rem;/* 42px */
@@ -37,4 +41,5 @@
 /***** 부드러운 스크롤 *****/
 html {
   scroll-behavior: smooth;
+  font-family: var(--font-ko);
 }
