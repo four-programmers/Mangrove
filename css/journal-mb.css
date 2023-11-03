@@ -8,3 +8,9 @@
 .post.active {
   display: none;
 }
+.post img {
+  width: 92%;
+  height: 55vw;
+  margin: 10px auto;
+  object-fit: cover;
+}
