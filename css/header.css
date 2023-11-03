@@ -2,22 +2,27 @@
 
 header {
   height: 103px;
+  width: 100%;
+  background-color: #FFF;
   font-family: var(--font-en);
   font-weight: 900;
   text-transform: uppercase;
+  position: fixed;
+  transition: 0.1s;
 }
 header .book-wrapper,
 header .menu-wrapper {
   display: none;
 }
 
-/*
+/* menu active */
 header .menu-wrapper.active {
   width: 100%;
   height: 100%;
   display: block;
   position: fixed;
   top: 0;
+  z-index: 100;
   background-color: var(--main-color);
   color: #fff;
   text-align: center;
@@ -73,7 +78,116 @@ header .menu-wrapper.active .global-menu ul li {
 header .menu-wrapper.active .global-menu li {
   padding: 5px 0 5px;
 }
-*/
+
+/* book active */
+header .book-wrapper.active {
+  font-family: var(--font-ko);
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #ddd;
+}
+header .book-wrapper.active .book-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  color: transparent;
+}
+header .book-wrapper.active .book-close-btn::after, 
+header .book-wrapper.active .book-close-btn::before {
+  content: "";
+  background-color: #000;
+  color: #000;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+header .book-wrapper.active .book-close-btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+header .book-wrapper.active ul {
+  width: 90%;
+  text-align: center;
+}
+header .book-wrapper.active ul li {
+  border: 3px solid #000;
+  margin: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+  position: relative;
+  /* min-width: 200px; */
+  /* display: grid;
+  place-items: center; */
+}
+header .book-wrapper.active ul li:nth-child(1) {
+  padding: 22.5px 22.5px 15px;
+}
+header .book-wrapper.active ul {
+  font-weight: 700;
+}
+header .book-wrapper.active ul li h3 {
+  font-family: var(--font-en);
+  font-size: calc(2vw + 25px);
+  text-transform: capitalize;
+}
+header .book-wrapper.active ul li a {
+  display:block;
+  width: 100%;
+}
+header .book-wrapper.active ul li a .inner-txt {
+  margin: 0 auto;
+}
+header .book-wrapper.active ul li a .inner-txt::after {
+  content: "";
+  width: 30px;
+  height: 20px;
+  background: url(../images/arrow.svg) no-repeat 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+header .book-wrapper.active .live-box {
+  background-color: var(--bg-color-purple);
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .book-wrapper.active .live-box li {
+  background-color: var(--bg-color-yellow);
+}
+header .book-wrapper.active .work-box {
+  background-color: var(--bg-color-yellow);
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .book-wrapper.active .work-box li:last-child {
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+header .book-wrapper.active .work-box li:last-child a {
+  border-bottom: 1px solid #000;
+}
+
+/* scroll */
+header.scroll {
+  height: calc(5.6vw + 36px);
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+}
+header.scroll h1 {
+  background: url(../images/index/logo-main.svg) no-repeat 50% 0% / 80%;
+}
 
 header .btn-wrapper {
   width: 100%;
@@ -91,6 +205,9 @@ header .btn-wrapper .menu-btn {
 }
 header h1 {
   text-indent: -9999px;
-  padding: 16px;
-  background: url(../images/index/logo-main.svg) no-repeat 50%;
+  padding: 0 16px;
+  height: 100%;
+  width: 100%;
+  background: url(../images/index/logo-main.svg) no-repeat 50% / 90%;
+  position: absolute;
 }
