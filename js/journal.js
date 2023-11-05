@@ -50,7 +50,7 @@ post6.addEventListener("click", () => {
   jnMenu.style.display ='none';
   postAll.forEach((evt) => evt.classList.add("active"));
 
-});s
+});
 post7.addEventListener("click", () => {
   postItvw7.style.display = "block";
   jnMenu.style.display ='none';
