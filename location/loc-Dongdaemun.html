@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="../style/common.css">
   <!-- header -->
   <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/header-pc.css" media="(width >= 1200px)">
   <!-- footer -->
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/footer-pc.css" media="(width >= 1200px)">
   <!-- style -->
   <link rel="stylesheet" href="../css/loc-common.css">
   <!-- script -->
@@ -21,8 +23,8 @@
 </head>
 
 <body>
-  <!----- header ----->
-  <header>
+   <!----- header ----->
+   <header>
     <div class="header-wrapper">
       <div class="btn-wrapper">
         <a href="#" class="book-btn">book</a>
@@ -69,7 +71,7 @@
           <li><a href="#">home</a></li>
           <li><a href="#">about us</a></li>
           <li>
-            <a href="#">locations</a>
+            <a href="#" class="locations-btn">locations</a>
             <ul>
               <li><a href="#">고성</a></li>
               <li><a href="#">신촌</a></li>
@@ -83,8 +85,9 @@
         </menu>
         <div class="lang"><a href="#">ENG</a></div>
       </div>
+      <div class="lang-pc"><a href="#">ENG</a></div>
     </div>
-    <h1>로고</h1>
+    <h1><img src="../images/location/동대문/logo-dongdaemun.svg" alt="메인로고"></h1>
   </header>
 
   <!----- section-intro ----->
@@ -113,6 +116,7 @@
       전체에 마련된 다채로운 멤버 전용 공용 공간으로 구성되어 있습니다.
     </p>
   </section>
+
   <!----- section-amenity ----->
   <section class="amenity">
     <h3>Amenity</h3>
@@ -132,19 +136,6 @@
         <img src="../images/location/동대문/220901-Mangrove-Dongdaemun_33.jpg" alt="">
         <img src="../images/location/동대문/220901-Mangrove-Dongdaemun_69.jpg" alt=""> -->
     </div>
-    <!-- <ul class="des">
-        <li><strong>Cafe Lounge</strong><p>커피와 디저트를 즐길 수 있는 감각적인 라운지</p></li>
-        <li><strong>Mangrove Store</strong><p>다양한 생필품과 흥미로운 굿즈를 갖춘 컨비니언스 스토어</p></li>
-        <li><strong>Work Station</strong><p>자유로운 업무와 스터디가 가능한 24시간 코워킹 공간</p></li>
-        <li><strong>Library</strong><p>영감과 울림을 주는 책으로 채워진 큐레이션 서가</p></li>
-        <li><strong>Community Room</strong><p>소규모 모임과 회의가 가능한 예약형 미팅룸</p></li>
-        <li><strong>Cinema Room</strong><p>대형 스크린과 풍부한 사운드로 즐기는 홈 시네마</p></li>
-        <li><strong>Flex Room</strong><p>다양한 전문 운동 기구를 갖춘 멤버 전용 피트니스룸</p></li>
-        <li><strong>Relax Room</strong><p>프라이빗하게 이용할 수 있는 예약형 명상, 요가룸</p></li>
-        <li><strong>Kitchen & Canteen</strong><p>시티뷰 대형 캔틴을 포함한 세 가지 타입의 공용 주방</p></li>
-        <li><strong>Laundry Room</strong><p>세탁기와 건조기가 갖춰진 24시간 무료 런드리룸</p></li>
-        <li><strong>Rooftop Terrace</strong><p>도심 속 여유와 휴식을 즐길 수 있는 루프톱 테라스</p></li>
-      </ul> -->
     <ul class="des">
       <li><strong>Cafe Lounge</strong>커피와 디저트를 즐길 수 있는 감각적인 라운지</li>
       <li><strong>Mangrove Store</strong>다양한 생필품과 흥미로운 굿즈를 갖춘 컨비니언스 스토어</li>

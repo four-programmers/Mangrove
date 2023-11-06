@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@media (width >=1200px) {
+  /*** more-btn ***/
+.more-btn {
+  padding: 5px 2em 5px 0.7em;
+  font-size: 1.375rem;
+  font-weight: 600;
+  font-family: var(--font-en);
+  cursor: pointer;
+  position: relative;
+}
+.more-btn span {
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-left: 0.3em;
+  width: 25px;
+  position: absolute;
+  top: 40%;
+  right: -25px;
+  transform: translate(-50%, -50%);
+}
+.more-btn span::before{
+  content: "";
+  background-color: #000;
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+/*** contents-title ***/
+.contents-title {
+  font-weight: 900;
+  font-size: var(--title-font);
+  line-height: 1.2;
+}
+/*** contents-des ***/
+.contents-des {
+  font-weight: 700;
+  font-size: var(--main-font-18);
+}
+
+  /*** main ***/
+  .main {
+    padding: 258px 60px 90px;
+    text-align: center;
+  }
+  .main .main-slide-img {
+    display: block;
+    padding: 0 10px;
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  .main .main-slide-img img {
+    width: 100%;
+  }
+  .main .txt-wrapper {
+    padding: 20px 10px 0;
+  }
+  .main .txt-wrapper .main-txt {
+    padding: 50px 20px;
+  }
+
+  /* locations */
+  .locations {
+    padding: 40px 0 40px;
+    display: grid;
+    grid-template-columns: 28% 72%;
+  }
+  .locations .locations-title {
+    margin-left: 60px;
+    padding: 0 10px 0;
+    border-right: 2px solid #000;
+  }
+  .locations .locations-title .contents-des {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .locations .locations-title .locations-menu {
+    padding-right: 30px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .locations .locations-title .locations-menu li:first-child {
+    border-top: 1px solid #000;
+  }
+  .locations .locations-title .locations-menu li {
+    text-align: left;
+    font-size: 1.25rem;
+    padding: 9px 0 8px 6px;
+    border: none;
+    border-bottom: 1px solid #000;
+  }
+  .locations .locations-tab {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+  }
+  .locations .locations-tab .tab {
+    width: 50%;
+    height: 100%;
+    border-right: 1px solid #000;
+    position: relative;
+  }
+
+  /* community */
+  .community {
+    display: grid;
+    grid-template-rows: 28% 72%;
+    grid-template-columns: 28% 36% 36%;
+  }
+  .community .community-title {
+    grid-row: 1 / 5;
+  }
+  .community .community-title img {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+}

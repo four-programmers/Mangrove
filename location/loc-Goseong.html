@@ -10,10 +10,12 @@
   <link rel="stylesheet" href="../style/minireset.min.css">
   <!-- common -->
   <link rel="stylesheet" href="../style/common.css">
-  <!-- header -->
-  <link rel="stylesheet" href="../css/header.css">
-  <!-- footer -->
-  <link rel="stylesheet" href="../css/footer.css">
+ <!-- header -->
+ <link rel="stylesheet" href="../css/header.css">
+ <link rel="stylesheet" href="../css/header-pc.css" media="(width >= 1200px)">
+ <!-- footer -->
+ <link rel="stylesheet" href="../css/footer.css">
+ <link rel="stylesheet" href="../css/footer-pc.css" media="(width >= 1200px)">
   <!-- style -->
   <link rel="stylesheet" href="../css/loc-Goseong.css">
   <link rel="stylesheet" href="../css/loc-common.css">
@@ -70,7 +72,7 @@
           <li><a href="#">home</a></li>
           <li><a href="#">about us</a></li>
           <li>
-            <a href="#">locations</a>
+            <a href="#" class="locations-btn">locations</a>
             <ul>
               <li><a href="#">고성</a></li>
               <li><a href="#">신촌</a></li>
@@ -84,14 +86,15 @@
         </menu>
         <div class="lang"><a href="#">ENG</a></div>
       </div>
+      <div class="lang-pc"><a href="#">ENG</a></div>
     </div>
-    <h1>로고</h1>
+    <h1><img src="../images/location/고성/20230629_012106.svg" alt="메인로고"></h1>
   </header>
 
   <!----- section-intro ----->
   <section class="intro">
     <video src="../images/location/고성/20230307_044626.mp4" autoplay muted></video>
-    <p>자기다움을 발견하는 유쾨한 여정이 어디서나 이어지도록,
+    <p>자기다움을 발견하는 유쾌한 여정이 어디서나 이어지도록,
       리모트 워커의 라이프스타일을 위한 '맹그로브 워크앤스테이'를 시작합니다.
       도심에서 벗어나 기분 좋게 몰입해 보세요</p>
   </section>
@@ -99,7 +102,7 @@
   <section class="overview">
     <h3>Overview</h3>
     <h5>공간 구성</h5>
-    <img src="./assets/images" alt="">
+    <img src="../images/location/고성/20230602_011053.png" alt="">
     <p>첫 번째 지점은 청정한 자연 환경을 품은 강원도에서 선보입니다.
       산과 바다로 둘러싸인 바닷가 마을에 자리한 맹그로브 고성에서 깊고 넓은 몰입의 순간을 즐겨보세요.
     </p>
@@ -108,27 +111,43 @@
       2-4층에는 온전히 몰입하거나 오롯이 휴식할 수 있는 개인 공간이 마련되어 있습니다.
       주방과 런드리룸 등 꼭 필요한 공용공간을 갖춰 오랜 기간 머물기에도 훌륭합니다.
     </p>
-    <!----- section-workLounge ----->
-    <section class="workLounge">
+    </section>
+
+    <!----- section-work-lounge ----->
+    <section class="work-lounge">
       <h3>Work Lounge</h3>
       <h5>업무공간</h5>
-      <img src="./assets/image/" alt="">
-      <h4>Deep Focus Zone</h4>
-      <ul class="des">
-        <li><strong>Confort Block</strong>편안한 소파형 의자에 않아 바다 경치를 누리며 일하는 자리</li>
-        <li><strong>Focus Block</strong>파티션을 갖춘 1인 좌석 혹은 모션 데스크에서 몰두해 일하는 자리</li>
-        <li><strong>Open Block</strong>열린 공간에서 자유롭게 생각을 펼치며 일할 수 있는 자리</li>
-      </ul>
-      <ul class="des">
-        <li><strong>Library</strong>고성의 작은 서점 '북끝서점'의 큐레이션으로 채워진 서가 </li>
-        <li><strong>Lab</strong>구글 크롬캐스트 갖춘 6인을 위한 회의실 겸 소형 오피스</li>
-        <li><strong>Booth</strong>온라인 회의, 전화 업무에 특화된 프라이빗 방음 부스</li>
-        <li><strong>Void Room</strong>바다를 바라보며 생각을 비워내는 고요한 명상룸</li>
-      </ul>
+      <div class="amenity-slide">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_12-2048x1365.jpg" alt="">
+        <!-- <img src="../images/location/고성/230330-Mangrove-Goseong_5-2048x1365.jpg" alt="">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_3-2048x1365.jpg" alt="">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_2-2048x1365.jpg" alt="">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_16-2048x1365.jpg\" alt="">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_15-2048x1365.jpg" alt="">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_13-2048x1365.jpg" alt=""> -->
+      </div>
+      <div class="zone-wrapper">
+        <h4>Deep Focus Zone</h4>
+        <ul class="des">
+          <li><strong>Confort Block</strong>편안한 소파형 의자에 않아 바다 경치를 누리며 일하는 자리</li>
+          <li><strong>Focus Block</strong>파티션을 갖춘 1인 좌석 혹은 모션 데스크에서 몰두해 일하는 자리</li>
+          <li><strong>Open Block</strong>열린 공간에서 자유롭게 생각을 펼치며 일할 수 있는 자리</li>
+        </ul>
+      </div>
+      <div class="zone-wrapper">
+        <h4>Wide Focus Zone</h4>
+        <ul class="des">
+          <li><strong>Library</strong>고성의 작은 서점 '북끝서점'의 큐레이션으로 채워진 서가 </li>
+          <li><strong>Lab</strong>구글 크롬캐스트 갖춘 6인을 위한 회의실 겸 소형 오피스</li>
+          <li><strong>Booth</strong>온라인 회의, 전화 업무에 특화된 프라이빗 방음 부스</li>
+          <li><strong>Void Room</strong>바다를 바라보며 생각을 비워내는 고요한 명상룸</li>
+        </ul>
+      </div>
       <p class="caution">* 워크 라운지만 단독으로 이용하고 싶다면 현장에 오셔서 일일 이용권을 구매해 주세요.</p>
     </section>
+
     <!----- section-stay ----->
-    <section class="stay">
+    <section class="room">
       <h3>Stay</h3>
       <h5>개인 공간</h5>
       <div class="space">
@@ -140,58 +159,90 @@
           <li><strong>View</strong>전 객실 오션 뷰</li>
         </ul>
       </div>
-      <img src="./assets/images/" alt="">
-      <h4>Stay Double</h4>
-      <ul class="des">
-        <li>온전한 휴식을 누리고 깊이 몰입하기 좋은 더블룸</li>
-        <li>1-2인실</li>
-        <li>퀸 베드</li>
-        <li>단독 화장실, 테라스</li>
-        <li>1박 16만원부터</li>
-      </ul>
-      <img src="./assets/images/" alt="">
-      <h4>Stay Twin</h4>
-      <ul class="des">
-        <li>둘이 따로 또 같이 지내며 몰입할 수 있는 트윈룸</li>
-        <li>2인실</li>
-        <li>슈퍼싱글 베드</li>
-        <li>단독 화장실, 테라스</li>
-        <li>1박 16만원부터</li>
-      </ul>
-      <img src="./assets/images/" alt="">
-      <h4>Stay Double Suite</h4>
-      <ul class="des">
-        <li>주방을 갖춰 원하는 만큼 살아보기 좋은 스위트룸</li>
-        <li>1-2인실</li>
-        <li>퀸 베드</li>
-        <li>단독 화장실, 테라스, 주방</li>
-        <li>1박 19만원부터</li>
-      </ul>
-      <img src="./assets/images/" alt="">
-      <h4>Stay Dormitory</h4>
-      <ul class="des">
-        <li>합리적인 비용으로 프라이버시를 누리는 도미토리룸</li>
-        <li>4인실</li>
-        <li>벙크 베드</li>
-        <li>공용 화장실, 테라스 <small>*책상, 의자, 미니 냉장고 미포함</small></li>
-        <li>1박 5만원부터</li>
-      </ul>
-      <img src="./assets/images/" alt="">
-      <ul class="des">
-        <li>온전한 휴식을 누리고 깊이 몰입하기 좋은 더블룸</li>
-        <li>1-2인실</li>
-        <li>퀸 베드</li>
-        <li>단독 화장실, 테라스</li>
-        <li>1박 16만원부터</li>
-      </ul>
+      <div class="room-item">
+        <div class="room-slide">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_29-2048x1365.jpg" alt="">
+        <!-- <img src="../images/location/고성/2-2.jpg" alt="">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_30-2048x1365.jpg" alt="">
+        <img src="../images/location/고성/230330-Mangrove-Goseong_31-2048x1365.jpg" alt="">
+        <img src="../images/location/고성/DOUBLE-2048x1152-1.png" alt=""> -->
+        </div>
+        <h4>Stay Double</h4>
+        <ul class="des">
+          <li>온전한 휴식을 누리고 깊이 몰입하기 좋은 더블룸</li>
+          <li>1-2인실</li>
+          <li>퀸 베드</li>
+          <li>단독 화장실, 테라스</li>
+          <li>1박 16만원부터</li>
+        </ul>
+      </div>
+      <div class="room-item">
+        <div class="room-slide">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_32-2048x1365.jpg" alt="">
+          <!-- <img src="../images/location/고성/1-1.jpg" alt="">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_33-2048x1365.jpg" alt="">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_34-2048x1365.jpg" alt="">
+          <img src="../images/location/고성/TWIN-2048x1152-1.png" alt=""> -->
+        </div>
+        <h4>Stay Twin</h4>
+        <ul class="des">
+          <li>둘이 따로 또 같이 지내며 몰입할 수 있는 트윈룸</li>
+          <li>2인실</li>
+          <li>슈퍼싱글 베드</li>
+          <li>단독 화장실, 테라스</li>
+          <li>1박 16만원부터</li>
+        </ul>
+      </div>
+      <div class="room-item">
+        <div class="room-slide">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_35-2048x1365.jpg" alt="">
+          <!-- <img src="../images/location/고성/1-1.jpg" alt="">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_37-2048x1365.jpg" alt="">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_38-2048x1365.jpg" alt="">
+          <img src="../images/location/고성/SUITE-2048x1152-1.png" alt=""> -->
+        </div>
+        <h4>Stay Double Suite</h4>
+        <ul class="des">
+          <li>주방을 갖춰 원하는 만큼 살아보기 좋은 스위트룸</li>
+          <li>1-2인실</li>
+          <li>퀸 베드</li>
+          <li>단독 화장실, 테라스, 주방</li>
+          <li>1박 19만원부터</li>
+        </ul>
+      </div>
+      <div class="room-item">
+        <div class="room-slide">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_40-2048x1365.jpg" alt="">
+          <!-- <img src="../images/location/고성/3-3.jpg" alt="">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_43-2048x1365.jpg" alt="">
+          <img src="../images/location/고성/230330-Mangrove-Goseong_42-2048x1365.jpg" alt="">
+          <img src="../images/location/고성/DORMITORY-2048x1152-1.png" alt="">-->
+        </div>
+        <h4>Stay Dormitory</h4>
+        <ul class="des">
+          <li>합리적인 비용으로 프라이버시를 누리는 도미토리룸</li>
+          <li>4인실</li>
+          <li>벙크 베드</li>
+          <li>공용 화장실, 테라스 <small>*책상, 의자, 미니 냉장고 미포함</small></li>
+          <li>1박 5만원부터</li>
+        </ul>
+      </div>
       <p class="caution">* 스테이 예약 시 워크 라운지를 24시간 무료로 이용할 수 있습니다.</p>
       <p class="caution">* 자세한 금액은 예약 페이지에서 확인해 주세요.</p>
     </section>
+
     <!----- section-AnS ----->
     <section class="AnS">
       <h3>Amenity<br>&Service</h3>
-      <h5>공용 공간과 서비스</h5>0
-      <img src="./assets/images/" alt="">
+      <h5>공용 공간과 서비스</h5>
+      <img src="../images/location/고성/230330-Mangrove-Goseong_19-2048x1365.jpg" alt="">
+      <!-- <img src="../images/location/고성/230330-Mangrove-Goseong_20-2048x1365.jpg" alt="">
+      <img src="../images/location/고성/230330-Mangrove-Goseong_21-2048x1365.jpg" alt="">
+      <img src="../images/location/고성/230330-Mangrove-Goseong_22-2048x1367.jpg" alt="">
+      <img src="../images/location/고성/230330-Mangrove-Goseong_28-2048x1365.jpg" alt="">
+      <img src="../images/location/고성/230330-Mangrove-Goseong_23-2048x1365.jpg" alt="">
+      <img src="../images/location/고성/230330-Mangrove-Goseong_25-2048x1365.jpg" alt="">
+      <img src="../images/location/고성/230330-Mangrove-Goseong_48-2048x1365.jpg" alt=""> -->
       <div class="amenity">
         <h4>Amenity</h4>
         <ul class="des">
@@ -201,7 +252,7 @@
           <li><strong>Rooftop Terrace</strong>캐주얼한 회의나 휴식을 위한 오션 뷰 루프톱 테라스</li>
         </ul>
       </div>
-      <div class="service">
+      <div class="amenity">
         <h4>Service</h4>
         <ul class="des">
           <li><strong>Worktools for Rent</strong>모니터, 키보드, 노트북 거치대 등 업무 보조기기를 대여해 드려요.</li>
@@ -215,65 +266,78 @@
         </ul>
       </div>
     </section>
+
     <!----- section-friends ----->
-    <section class="friends"></section>
+    <section class="friends">
     <h4>Friends</h4>
     <div class="item">
-      <img src="" alt="">
+      <img src="../images/location/고성/Furniture.png" alt="">
       <h5>furniture</h5>
     </div>
     <div class="item">
-      <img src="" alt="">
+      <img src="../images/location/고성/Furniture-2.png" alt="">
     </div>
     <div class="item">
-      <img src="" alt="">
+      <img src="../images/location/고성/Furniture-3.png" alt="">
     </div>
     <div class="item">
-      <img src="" alt="">
+      <img src="../images/location/고성/20230329_005601.png" alt="">
       <h5>Construction & Interior Design</h5>
     </div>
     <div class="item">
-      <img src="" alt="">
+      <img src="../images/location/고성/Signage-Design.png" alt="">
       <h5>Signage Design</h5>
     </div>
+  </section>
+  
     <!----- section-membership ----->
     <section class="membership">
       <h3>Workwide<br>Membership</h3>
       <h5>멤버십</h5>
       <p>워크와이드 멤버십에 가입하고 다양한 혜택과 함께 맹그로브 고성을 경험해 보세요.<br>
         멤버십은 연회비 기반으로 운영되지만, 2024년 3월까지는 연회비를 면제해 드립니다.</p>
-      <div class="membership-logo">
-        <img src="./images/" alt="">
-      </div>
-      <div class="membership-disc">
-        <strong>Permanent Discount</strong>
-        <strong>언제나 20% 할인을 받을 수 있어요</strong>
-        <img src="./images/" alt="">
-        <p>멤버 전용 코드를 이용하여 언제든 할인가에 스테이 예약을 할 수 있어요.</p>
-      </div>
-      <div class="exclusive-pkg">
-        <strong>Exclusive Packages</strong>
-        <strong>특별한 패키지 상품을 예약할 수 있어요</strong>
-        <img src="./images/" alt="">
-        <p>테마를 가진 1주일 패키지, 숙박권 묶음 패키지 등 전용 상품을 이용할 수 있어요.</p>
-      </div>
-      <div class="join-community">
-        <strong>Join Our Community</strong>
-        <strong>리모트 워커가 모인 커뮤니티를 제공해요</strong>
-        <img src="./images/" alt="">
-        <p>리모트 워커가 모인 커뮤니티 채널 안에서 다양한 멤버들과 만나고 교류할 수 있어요</p>
-      </div>
-      <div class="partner">
-        <strong>Meet Our Partners</strong>
-        <strong>풍성한 제휴 혜택을 마음껏 누려요</strong>
-        <img src="./images/" alt="">
-        <p>맹그로브의 파트너 브랜드들이 제공하는 풍성한 제휴 혜택을 언제든 누릴 수 있어요</p>
+      <div class="membership-wrapper">
+        <div class="membership-logo">
+          <img src="../images/location/고성/Workwide-Membership-2.svg" alt="">
+        </div>
+        <div class="membership-desc">
+          <div class="membership-title">
+            <strong>Permanent Discount</strong>
+          <strong>언제나 20% 할인을 받을 수 있어요</strong>
+          </div>
+          <img src="../images/location/고성/discount.png" alt="">
+          <p>멤버 전용 코드를 이용하여 언제든 할인가에 스테이 예약을 할 수 있어요.</p>
+        </div>
+        <div class="membership-desc">
+          <div class="membership-title">
+            <strong>Exclusive Packages</strong>
+            <strong>특별한 패키지 상품을 예약할 수 있어요</strong>
+          </div>
+          <img src="../images/location/고성/member-exclusive.png" alt="">
+          <p>테마를 가진 1주일 패키지, 숙박권 묶음 패키지 등 전용 상품을 이용할 수 있어요.</p>
+        </div>
+        <div class="membership-desc">
+          <div class="membership-title">
+            <strong>Join Our Community</strong>
+            <strong>리모트 워커가 모인 커뮤니티를 제공해요</strong>
+          </div>
+          <img src="../images/location/고성/mattisse-dance.png" alt="">
+          <p>리모트 워커가 모인 커뮤니티 채널 안에서 다양한 멤버들과 만나고 교류할 수 있어요</p>
+        </div>
+        <div class="membership-desc">
+          <div class="membership-title">
+            <strong>Meet Our Partners</strong>
+            <strong>풍성한 제휴 혜택을 마음껏 누려요</strong>
+          </div>
+          <img src="../images/location/고성/Affiliate-discount.png" alt="">
+          <p>맹그로브의 파트너 브랜드들이 제공하는 풍성한 제휴 혜택을 언제든 누릴 수 있어요</p>
+        </div>
       </div>
       <div class="member">
-        <a href="#" class="member-btn">Be our Menmber</a>
+        <a href="#" class="member-btn">Be our Member</a>
       </div>
       <div class="book">
-        <a href="#">일반 스테이 예약을 통해서도 맹그로브 고성을 이용할 수 있습니다. 버튼을 눌러 예약이 가능한 일자를 확인해 보세요.</a>
+       <p>일반 스테이 예약을 통해서도 맹그로브 고성을 이용할 수 있습니다. 버튼을 눌러 예약이 가능한 일자를 확인해 보세요.</p>
         <a href="#" class="book-btn">Book for Stay!</a>
       </div>
     </section>
@@ -296,7 +360,7 @@
       <h5>지역 소개</h5>
       <p>교암리는 강원도 고성군 토성면에 위치한 바닷가 마을입니다. 동해안과 나란히 펼쳐진 해파랑길 46코스를 따라 걸으면 어느 방향으로든 푸른 해변, 드넓은 모래사장과 마주할 수 있습니다. 해변 라이딩을
         즐기기 좋은 동해안 자전거길과 해돋이 명소가 인접해 있으며, 버스 정류장, 편의점, 식당, 카페 등 충분한 생활 시설도 갖추었습니다.</p>
-      <img src="./images/loc-Goseong/" alt="">
+      <img src="../images/location/고성/20230308_014153.png" alt="">
       <p>
         <strong>Infrastucture</strong>
         버스 정류장 도보 1분 거리<br>
@@ -324,7 +388,7 @@
 
     <!----- section-FAQ ----->
     <section class="faq">
-      <h3>faq</h3>
+      <h3>FAQ</h3>
       <h5>자주 묻는 질문</h5>
       <div class="faq-wrapper">
         <h4>스테이 이용 관련</h4>

@@ -1,0 +1,97 @@
+@charset "utf-8";
+.membership a, .cor-programs a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 30px 0 40px;
+  padding : 25px 1em;
+  font-size: var(--btn-font);
+  font-weight: 900;
+}
+/***** section-work-lounge *****/
+.work-lounge .zone-wrapper{
+padding-bottom: 30px;
+margin-bottom: 16px;
+}
+
+/***** section-membership *****/
+.membership {
+  background-color: var( --bg-color-lightMint);
+}
+.membership p{
+  padding-bottom: 40px;
+}
+.membership-wrapper {
+  background-color: var(--bg-color-yellow);
+  display: grid;
+  grid-template-rows: 1fr repeat(3, 3fr);
+  justify-items: center;
+  padding: 0 16px;
+  border: 1px solid black;
+  color: var(--point-color-purple);
+}
+.membership-wrapper .membership-logo {
+  display: flex;
+  align-items: center;
+}
+.membership-wrapper .membership-logo img{
+  height: 150px;
+}
+.membership-wrapper .membership-desc {
+  border-top: 1px solid black;
+}
+.membership-wrapper .membership-desc .membership-title {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px 16px;
+}
+.membership-wrapper .membership-desc .membership-title strong:first-child{
+  font-size: 1.406rem;
+}
+.membership-wrapper .membership-desc .membership-title strong:last-child {
+  font-size: var(--main-font-middle);
+}
+.membership-wrapper .membership-desc img {
+  width: 60%;
+  margin-left: 20%;
+}
+.membership-wrapper .membership-desc p {
+  padding: 0 30px 30px;
+  margin-bottom: 16px;
+  font-size: var(--main-font-18);
+}
+.membership .member a {
+  background-color: var(--point-color-purple);
+  color: white;
+}
+.membership .book {
+  background-color: white;
+  padding: 30px 20px 20px;
+  border: 1px solid black;
+}
+.membership .book a {
+  border: 2px solid var(--point-color-purple);
+  color: var(--point-color-purple);
+}
+
+/***** section-corPrograms *****/
+.cor-programs {
+  background-color: var(--bg-color-lightMint);
+}
+.cor-programs a {
+  background-color: var(--main-color);
+  color: var(--point-color-lightGreen);
+}
+.cor-programs .program-txt strong{
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+.cor-programs .program-txt p {
+  font-weight: 400;
+}
+
+/***** section-neighbor*****/
+.neighbor {
+  background-color: var(--bg-color-yellow);
+}

@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 header {
-  height: 103px;
   width: 100%;
   background-color: #FFF;
   font-family: var(--font-en);
@@ -9,10 +8,42 @@ header {
   text-transform: uppercase;
   position: fixed;
   transition: 0.1s;
+  z-index: 1000;
+}
+header .header-wrapper .lang-pc {
+  display: none;
 }
 header .book-wrapper,
 header .menu-wrapper {
   display: none;
+}
+header .btn-wrapper {
+  font-size: var(--main-font-18);
+  width: 100%;
+  height: 36px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .btn-wrapper .book-btn {
+  animation: bookAniMb 4s infinite;
+}
+header .btn-wrapper .book-btn,
+header .btn-wrapper .menu-btn {
+  padding: 0 16px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+header h1 {
+  padding: 36px 16px 16px;
+  width: 100%;
+  height: 100%;
+}
+header h1 img {
+  width: 100%;
 }
 
 /* menu active */
@@ -125,9 +156,6 @@ header .book-wrapper.active ul li {
   padding: 12px;
   box-sizing: border-box;
   position: relative;
-  /* min-width: 200px; */
-  /* display: grid;
-  place-items: center; */
 }
 header .book-wrapper.active ul li:nth-child(1) {
   padding: 22.5px 22.5px 15px;
@@ -194,28 +222,21 @@ header.scroll {
   border-bottom: 1px solid #000;
 }
 header.scroll h1 {
-  background: url(../images/index/logo-main.svg) no-repeat 50% 0% / 80%;
+  width: 90%;
+  margin: 0 auto;
 }
 
-header .btn-wrapper {
-  width: 100%;
-  height: 36px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+@keyframes bookAniMb {
+  0% {
+    color: #00b453;
 }
-header .btn-wrapper .book-btn,
-header .btn-wrapper .menu-btn {
-  padding: 0 16px;
-  font-size: var(--main-font-18);
-  line-height: 36px;
-  letter-spacing: 1px;
+33.333% {
+    color: #5370d7;
 }
-header h1 {
-  text-indent: -9999px;
-  padding: 0 16px;
-  height: 100%;
-  width: 100%;
-  background: url(../images/index/logo-main.svg) no-repeat 50% / 90%;
-  position: absolute;
+66.667% {
+    color: black;
+}
+100% {
+    color: #00b453;
+}
 }

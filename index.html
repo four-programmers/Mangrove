@@ -13,13 +13,16 @@
   <link rel="stylesheet" href="./style/common.css">
   <!-- header -->
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/header-pc.css">
   <!-- footer -->
   <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/footerPc.css">
+  <link rel="stylesheet" href="./css/footer-pc.css">
   <!-- style -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./css/index-mb.css">
+  <link rel="stylesheet" href="./css/index-pc.css">
   <!-- script -->
   <script defer src="./js/header.js"></script>
+  <!-- <script defer src="./js/index.js"></script> -->
 </head>
 
 <body>
@@ -71,7 +74,7 @@
           <li><a href="#">home</a></li>
           <li><a href="#">about us</a></li>
           <li>
-            <a href="#">locations</a>
+            <a href="#" class="locations-btn">locations</a>
             <ul>
               <li><a href="#">고성</a></li>
               <li><a href="#">신촌</a></li>
@@ -85,16 +88,35 @@
         </menu>
         <div class="lang"><a href="#">ENG</a></div>
       </div>
+      <div class="lang-pc"><a href="#">ENG</a></div>
     </div>
-    <h1>로고</h1>
+    <h1><img src="./images/index/logo-main.svg" alt="메인로고"></h1>
   </header>
 
   <!----- contents ----->
   <!-- main -->
   <div class="main">
-    <div class="main-img">메인이미지</div>
-    <p class="main-txt">하나의 지붕 아래 크고 풍요로운 집-<br>맹그로브는 다양한 사람들이 조화를 이루며<br>건강하고 유쾌하게 살아가는 코리빙 하우스입니다.</p>
-    <a href="#" class="more-btn">Read more</a>
+    <div class="main-slide-img">
+      <ul class="slide-wrapper">
+        <li class="slide-img img1 swipe">메인 이미지1</li>
+        <li class="slide-img img2">메인 이미지2</li>
+        <li class="slide-img img3">메인 이미지3</li>
+        <li class="slide-img img4">메인 이미지4</li>
+        <li class="slide-img img5">메인 이미지5</li>
+        <li class="slide-img img6">메인 이미지6</li>
+        <li class="slide-img img7">메인 이미지7</li>
+        <li class="slide-img img8">메인 이미지8</li>
+        <li class="slide-img img9">메인 이미지9</li>
+        <li class="slide-img img10">메인 이미지10</li>
+        <li class="slide-img img11">메인 이미지11</li>
+        <li class="slide-img img12">메인 이미지12</li>
+        <li class="slide-img img13">메인 이미지13</li>
+      </ul>
+    </div>
+    <div class="txt-wrapper">
+      <p class="main-txt">하나의 지붕 아래 크고 풍요로운 집-<br>맹그로브는 다양한 사람들이 조화를 이루며<br>건강하고 유쾌하게 살아가는 코리빙 하우스입니다.</p>
+    </div>
+    <a href="#" class="more-btn">Read more<span>&gt;</span></a>
   </div>
 
   <!-- locations -->
@@ -111,51 +133,57 @@
         <li>Soongin</li>
       </ul>
     </div>
-    <div class="locations-slide">
-      <ul>
-        <li class="slide-goseong">
-          <img src="" alt="맹그로브 고성 로고">
-          <img src="" alt="고성 드로잉 이미지">
+    <ul class="locations-tab">
+      <li class="tab-goseong tab">
+        <div><img src="./images/index/logo-goseong.svg" alt="맹그로브 고성 로고"></div>
+        <span>고성 드로잉 이미지</span>
+        <div class="tab-txt">
           <h3>맹그로브 고성</h3>
           <p>기분 좋은 몰입을 위한 한적한 바다 앞 워크앤스테이</p>
-        </li>
-        <li class="slide-sinchon">
-          <img src="" alt="맹그로브 신촌 로고">
-          <img src="" alt="신촌 드로잉 이미지">
+        </div>
+      </li>
+      <li class="tab-sinchon tab">
+        <div><img src="./images/index/logo-sinchon.svg" alt="맹그로브 신촌 로고"></div>
+        <span>신촌 드로잉 이미지</span>
+        <div class="tab-txt">
           <h3>맹그로브 신촌</h3>
           <p>활기찬 도시 인프라와 편리한 일상을 누리는 코리빙 하우스</p>
-        </li>
-        <li class="slide-dongdaemun">
-          <img src="" alt="맹그로브 동대문 로고">
-          <img src="" alt="동대문 드로잉 이미지">
+        </div>
+      </li>
+      <li class="tab-dongdaemun tab">
+        <div><img src="./images/index/logo-dongdaemun.svg" alt="맹그로브 동대문 로고"></div>
+        <span>동대문 드로잉 이미지</span>
+        <div class="tab-txt">
           <h3>맹그로브 동대문</h3>
           <p>교통, 문화의 중심지에서 여행하듯 머무는 코리빙 하우스</p>
-        </li>
-        <li class="slide-sinseol">
-          <img src="" alt="맹그로브 신설 로고">
-          <img src="" alt="신설 드로잉 이미지">
+        </div>
+      </li>
+      <li class="tab-sinseol tab">
+        <div><img src="./images/index/logo-sinseol-1.svg" alt="맹그로브 신설 로고"></div>
+        <span>신설 드로잉 이미지</span>
+        <div class="tab-txt">
           <h3>맹그로브 신설</h3>
           <p>다채로운 공용 공간을 갖춘 대형 코리빙 하우스</p>
-        </li>
-        <li class="slide-soongin">
-          <img src="" alt="맹그로브 숭인 로고">
-          <img src="" alt="숭인 드로잉 이미지">
+        </div>
+      </li>
+      <li class="tab-soongin tab">
+        <div><img src="./images/index/logo-soongin-1.svg" alt="맹그로브 숭인 로고"></div>
+        <span>숭인 드로잉 이미지</span>
+        <div class="tab-txt">
           <h3>맹그로브 숭인</h3>
           <p>24명의 이웃들이 모여 사는 안락한 코리빙 하우스</p>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <!-- community -->
   <section class="community">
-    <div class="community-title">
-      <h2 class="contents-title">Community</h2>
-      <p class="contents-des">맹그로브의 유쾌한 커뮤니티를 경험해 보세요.</p>
-      <span>커뮤니티 이미지</span>
-      <p class="contents-des">MSC(Mangrove Social Club)는 건강한 일상을 가꾸고, 자기다운 성장을 돕는 맹그로브의 웰니스 커뮤니티입니다.</p>
-    </div>
-    <ul class="contents-list">
+    <h2 class="contents-title">Community</h2>
+    <p class="contents-des">맹그로브의 유쾌한 커뮤니티를 경험해 보세요.</p>
+    <img src="./images/index/main-coummunity.jpg" alt="타코에 소스를 올리는 모습">
+    <p class="contents-des"><span>MSC(Mangrove Social Club)</span>는 건강한 일상을 가꾸고, 자기다운 성장을 돕는 맹그로브의 웰니스 커뮤니티입니다.</p>
+    <ul class="community-list">
       <li>
         <h4>Mindfulness</h4>
         <p>명상과 요가, 좋은 음식들로 지친 나를 돌보고 회복하는 시간들을 만들어 갑니다.</p>
@@ -173,8 +201,8 @@
         <p>나와 이웃에서 더 나아가 지역과 사회에 대해서도 생각합니다. 세상의 다양한 관점을 이해할 수 있습니다.</p>
       </li>
     </ul>
-    <a href="#" class="more-btn">Find out more</a>
-    <span>커뮤니티 이미지2</span>
+    <a href="#" class="more-btn">Find out more<span>&gt;</span></a>
+    <div class="community-img"><img src="./images/index/loc-goseong.png" alt="커뮤니티 드로잉 이미지"></div>
   </section>
 
   <!-- journal -->
@@ -185,42 +213,57 @@
     </div>
     <div class="journal-post">
       <ul>
-        <li><img src="" alt=""></li>
+        <li>
+          <a href="#" class="post-img"><img src="./images/index/journal1.jpg" alt="요가하고 있는 모습"></a>
+          <a href="#" class="journal-icon"><img src="./images/index/journal-icon-01.svg" alt="아이콘"></a>
+        </li>
         <li>
           <h5 class="post-title">&lt;아 요가&gt;와 함께한 들숨과 날숨의 기록들</h5>
         </li>
-        <li>[Mangrove Dongdaemun] &lt;아 요가&gt; 매거진 vol.5</li>
+        <li>[<span>Mangrove Dongdaemun</span>] &lt;아 요가&gt; 매거진 <span>vol.5</span></li>
       </ul>
       <ul>
-        <li><img src="" alt=""></li>
+        <li>
+          <a href="#" class="post-img"><img src="./images/index/journal4.jpg" alt="카드키 수거함"></a>
+          <a href="#" class="journal-icon"><img src="./images/index/journal-icon-01.svg" alt="아이콘"></a>
+        </li>
         <li>
           <h5 class="post-title">일상의 연장선에서 새로운 영감을 만날 수 있을 거예요.</h5>
         </li>
-        <li>[Mangrove Stay] 맹그로브 스테이 매니저 인터뷰</li>
+        <li>[<span>Mangrove Stay</span>] 맹그로브 스테이 매니저 인터뷰</li>
       </ul>
       <ul>
-        <li><img src="" alt=""></li>
+        <li>
+          <a href="#" class="post-img"><img src="./images/index/journal3.jpg" alt="베란다 난간에 기대있는 선글라스 쓴 남자"></a>
+          <a href="#" class="journal-icon"><img src="./images/index/journal-icon-01.svg" alt="아이콘"></a>
+        </li>
         <li>
           <h5 class="post-title">신선한 활기와 재밌는 개성으로 빛나는 도시, 서울!</h5>
         </li>
-        <li>&lt;뽀빠이&gt;매거진 아트디렉터 Taro Kambe 인터뷰</li>
+        <li>&lt;뽀빠이&gt;매거진 아트디렉터 <span>Taro Kambe</span> 인터뷰</li>
       </ul>
       <ul>
-        <li><img src="" alt=""></li>
+        <li>
+          <a href="#" class="post-img"><img src="./images/index/journal5.jpg" alt="노을지고 있는 바다가 보이는 베란다 풍경"></a>
+          <a href="#" class="journal-icon"><img src="./images/index/journal-icon-01.svg" alt="아이콘"></a>
+        </li>
         <li>
           <h5 class="post-title">내가 이름을 두고 온 바다</h5>
         </li>
-        <li>[Mangrove Goseong] 크리에이터 양다솔 에세이</li>
+        <li>[<span>Mangrove Goseong</span>] 크리에이터 양다솔 에세이</li>
       </ul>
       <ul>
-        <li><img src="" alt=""></li>
+        <li>
+          <a href="#" class="post-img"><img src="./images/index/journa2.jpg" alt="바다 속에서 문어 잡은 남자"></a>
+          <a href="#" class="journal-icon"><img src="./images/index/journal-icon-01.svg" alt="아이콘"></a>
+        </li>
         <li>
           <h5 class="post-title">맹그로브 고성에서 밀도 높은 몰입과 번득이는 영감을</h5>
         </li>
-        <li>[Mangrove Goseong] 크리에이터 강민영 영화 큐레이션</li>
+        <li>[<span>Mangrove Goseong</span>] 크리에이터 강민영 영화 큐레이션</li>
       </ul>
     </div>
-    <a href="#" class="more-btn">Read more</a>
+    <a href="#" class="more-btn">Read more<span>&gt;</span></a>
   </section>
 
   <!-- faq -->
@@ -229,24 +272,27 @@
     <ul class="faq-list">
       <li>
         <h5 class="list-title">코리빙이 무엇인가요?</h5>
-        <span>코리빙(Coliving)은 주거 건물을 여러 사람과 함께 쓰는 주거 방식입니다. 쉐어 하우스와 하숙집과는 구분되는데요, 개인 공간과 공유 공간이 확실하게 구분되어 있기 때문에 개인 공간은
-          철저하게 혼자 쓰고, 함께 사는 장점만 가져가는 새로운 형식의 주거 모델입니다.</span>
+        <div class="list-txt">코리빙<span>(Coliving)</span>은 주거 건물을 여러 사람과 함께 쓰는 주거 방식입니다. 쉐어 하우스와 하숙집과는 구분되는데요, 개인 공간과 공유
+          공간이 확실하게 구분되어 있기 때문에 개인 공간은 철저하게 혼자 쓰고, 함께 사는 장점만 가져가는 새로운 형식의 주거 모델입니다.</div>
       </li>
       <li>
         <h5 class="list-title">코리빙의 장점은 무엇인가요?</h5>
-        <span>1) 함께 살기 때문에 경제적인 부담은 줄고, 2) 원하는 기간만큼 유연하게 머물 수 있고, 3) 같이 사는 재미도 누릴 수 있습니다. 인근 원룸과 비슷한 주거비로 역에서 가까우면서도 쾌적한
+        <div class="list-txt">1) 함께 살기 때문에 경제적인 부담은 줄고, 2) 원하는 기간만큼 유연하게 머물 수 있고, 3) 같이 사는 재미도 누릴 수 있습니다. 인근 원룸과 비슷한
+          주거비로 역에서 가까우면서도 쾌적한
           집을 구할 수 있고, 전문적으로 공간을 관리해주기 때문에 혼자 사는 어려움도 극복할 수 있습니다. 코리빙은 인구밀도가 높고 1인 가구가 급증하는 대도시에서 주거 문제를 해결하는 새로운 대안으로
-          여겨지고 있습니다.</span>
+          여겨지고 있습니다.</div>
       </li>
       <li>
         <h5 class="list-title">맹그로브에 입주하려면 어떻게 해야 하나요?</h5>
-        <span>공간 투어 및 상담 후 입주를 도와드립니다. 홈페이지 상단의 &#8216;BOOK&#8217; 버튼을 눌러 투어를 신청할 수 있습니다. 코리빙에 관심은 있지만 아직 확신이 없다면, 며칠간
-          머물러볼 수 있는 &#8216;Stay&#8217;를 먼저 경험해 보세요.</span>
+        <div class="list-txt">공간 투어 및 상담 후 입주를 도와드립니다. 홈페이지 상단의 &#8216;<span>BOOK</span>&#8217; 버튼을 눌러 투어를 신청할 수 있습니다.
+          코리빙에 관심은 있지만 아직 확신이 없다면, 며칠간
+          머물러볼 수 있는 &#8216;<span>Stay</span>&#8217;를 먼저 경험해 보세요.</div>
       </li>
       <li>
         <h5 class="list-title">거주 기간이 어떻게 되나요?</h5>
-        <div>최소 하루부터 최대 일 년까지, 개인의 상황에 따라 유연하게 거주할 수 있습니다. 다만 지점별로 최소 거주 기간은 다를 수 있으니 각 지점 페이지를 참고해 주세요.<br>
-          <ul>
+        <div class="list-txt">최소 하루부터 최대 일 년까지, 개인의 상황에 따라 유연하게 거주할 수 있습니다. 다만 지점별로 최소 거주 기간은 다를 수 있으니 각 지점 페이지를 참고해
+          주세요.<br>
+          <ul class="faq-list-link">
             <li><a href="#">맹그로브 숭인 바로 가기</a></li>
             <li><a href="#">맹그로브 신설 바로 가기</a></li>
             <li><a href="#">맹그로브 동대문 바로 가기</a></li>
@@ -256,15 +302,15 @@
       </li>
       <li>
         <h5 class="list-title">맹그로브 소셜클럽은 어떻게 참여할 수 있나요?</h5>
-        <span>멤버 전용 App을 통해 월초 오픈되는 당월 프로그램을 신청할 수 있습니다. 프로그램의 형태에 따라 부여받는 크레딧을 사용해야 하거나, 유료로 참여하실 수도 있습니다. 추가로 지인 초대 및
-          외부 게스트에게 오픈하는 이벤트는 사전 안내하고 있습니다.</span>
+        <div class="list-txt">멤버 전용 <span>App</span>을 통해 월초 오픈되는 당월 프로그램을 신청할 수 있습니다. 프로그램의 형태에 따라 부여받는 크레딧을 사용해야 하거나,
+          유료로 참여하실 수도 있습니다. 추가로 지인 초대 및 외부 게스트에게 오픈하는 이벤트는 사전 안내하고 있습니다.</div>
       </li>
     </ul>
   </section>
 
   <!-- subs -->
   <section class="subs">
-    <h2 class="contents-title">맹그로브의 새로운 소식을 가장 먼저 만나보세요.</h2>
+    <h3>맹그로브의 새로운 소식을 가장 먼저 만나보세요.</h3>
     <form>
       <ul>
         <li><span>이메일 주소</span><br><input type="email"></li>
@@ -273,7 +319,7 @@
       </ul>
       <button type="submit">구독 신청하기</button>
     </form>
-    <span>구독 이미지</span>
+    <span class="subs-img"><img src="./images/index/mail.webp" alt="구독 이미지"></span>
   </section>
 
   <!----- footer ----->
