@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+h3 {
+  font-family: var(--font-en);
+  font-size: var(--title-font-small);
+  font-weight: 900;
+}
+
+h5 {
+  font-size: var(--main-font-16);
+  padding: 5px 0 10px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+section {
+  padding: 20px 16px 40px;
+  border-bottom: 1px solid black;
+}
+
+.des li {
+  width: 100%;
+  display: flex;
+  font-weight: 500;
+  border-top: 2px solid gray;
+  padding: 6px 10px;
+  word-break: break-all;
+}
+
+.space-des li {
+  border-color: white;
+}
+
+/***** header *****/
+header {
+  height: 210px;
+}
+header h1 {
+  background: url(../images/location/동대문/logo-dongdaemun.svg) no-repeat 50%
+    0% / 90%;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin: 0 16px 0;
+}
+
+/***** section-intro *****/
+.intro {
+  padding: 246px 0 40px;
+}
+
+.intro .intro-slide {
+  padding: 0 16px 40px;
+}
+
+.intro .intro-slide img {
+  width: 100%;
+}
+
+.intro p {
+  padding: 0 16px;
+  font-size: var(--main-font-middle);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/***** section-overview *****/
+.overview p {
+  font-size: var(--main-font-middle);
+  word-break: keep-all;
+  font-weight: 500;
+}
+.overview img {
+  margin-bottom: 16px;
+}
+
+/***** section-amenity *****/
+.amenity .amenity-slide {
+  padding-bottom: 40px;
+}
+.amenity .des li strong {
+  width: 50%;
+}
+
+/***** section-live *****/
+.room {
+  border-bottom: none;
+}
+.room .space {
+  background-color: var(--point-color-lightGreen);
+  color: white;
+  margin-bottom: 40px;
+  padding: 15px;
+}
+.room .space h4 {
+  font-family: var(--font-en);
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.room .space .des li strong {
+  width: 30%;
+}
+.room .room-item {
+  margin-bottom: 16px;
+}
+.room .room-item-wrapper .room-item img {
+  width: 100%;
+}
+.room .room-item h4 {
+  padding: 20px 0 5px;
+  font-family: var(--font-en);
+  font-size: var(--main-font-18);
+  font-weight: 700;
+}
+.room .room-item-wrapper {
+  padding-bottom: 40px;
+}
+.room .caution {
+  font-size: var(--main-font-15);
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-bottom: 16px;
+}
+.room .book {
+  display: block;
+  background-color: var(--main-color);
+  color: var(--point-color-green);
+  font-size: var(--btn-font);
+  font-family: var(--font-en);
+  margin: 30px 0 40px;
+  font-weight: 900;
+  width: 100%;
+  padding: 0.6em 1em;
+  text-align: center;
+}
+.room .space h6 {
+  margin: 27px 0 10px;
+  font-size: var(--ft-font);
+}
+.room .room-item .room-slide img {
+  width: 100%;
+}
+
+/***** section-friends *****/
+.friends {
+  font-family: var(--font-en);
+  border-bottom: none;
+}
+.friends h4 {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.friends .item {
+  display: flex;
+  padding: 14px 20px 50px 0;
+  border-top: 1px solid black;
+}
+.friends .item img {
+  width: 50%;
+}
+.friends .item h5 {
+  width: 50%;
+}
+/***** section-neighbor *****/
+.neighbor {
+  border-top: 1px solid black;
+  padding-bottom: 80px;
+}
+.neighbor p {
+  font-weight: 500;
+  font-size: var(--main-font-15);
+  margin-bottom: 16px;
+}
+.neighbor p:first-child {
+  word-wrap: break-word;
+  font-weight: 500;
+  font-size: var(--main-font-middle);
+}
+.neighbor p strong {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 0 0 9px;
+  padding: 0 0 6px;
+}
+
+/***** section-FAQ *****/
+.faq .faq-wrapper {
+  font-size: var(--main-font-15);
+}
+.faq .faq-wrapper h4 {
+  font-weight: 900;
+  padding-bottom: 5px;
+}
+.faq .faq-wrapper .faq-item .faq-title {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.faq .faq-wrapper .faq-item .faq-title h5 {
+  margin: 0;
+  padding: 10px 50px 6px 0;
+}
+.faq .faq-wrapper .faq-item .faq-title .toggle-btn {
+  position: relative;
+  text-indent: -9999px;
+}
+.faq .faq-wrapper .faq-item .faq-title .toggle-btn::before {
+  content: "";
+  background: url(../images/location/동대문/faq-plus.svg) 50% no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.faq .faq-wrapper .faq-item .toggle-txt {
+  padding: 7px 20px 6px;
+  font-weight: 500;
+  word-wrap: break-word;
+}
