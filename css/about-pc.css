@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/*** about-title ***/
+.about-title {
+  font-family: var(--font-en);
+  font-weight: 900;
+  font-size: var(--hd-font);
+}
+/*** about-des ***/
+.about-des {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/*** contents ***/
+/* live & grow */
+.grow {
+  padding-top: 143px;
+  text-align: center;
+  word-break: keep-all;
+}
+.grow div {
+  padding: 0 16px 32px;
+}
+.grow .grow-img img {
+  width: 100%;
+  aspect-ratio: 17 / 14;
+}
+.grow .grow-txt .about-title {
+  font-size: 1.96875rem;
+  padding-bottom: 10px;
+}
+.grow .grow-txt p {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.8em;
+}
+.grow .grow-txt p span {
+  font-family: var(--font-en);
+}
+
+/* live */
+.live {
+  word-wrap: break-word;
+}
+.live .live-wrapper .box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+.live .live-wrapper .box:nth-child(odd) {
+  background-color: var(--point-color-lightGreens);
+  border-top: 1px solid #000;
+}
+.live .live-wrapper .box:nth-child(even) {
+  background-color: var(--bg-color-yellow);
+  padding: 16px;
+  border-top: 1px solid #000;
+}
+.live .live-wrapper .box:last-child {
+  border-bottom: 1px solid #000;
+}
+.live .live-wrapper .box .about-title {
+  margin-bottom: 5px;
+}
+.live .live-wrapper .box .about-des {
+  margin-top: 20px;
+}
+
+/* benefit */
+.benefit {
+  padding: 16px 0 16px;
+  position: relative;
+}
+.benefit::after {
+  content: "";
+  background-color: #000;
+  width: 90%;
+  height: 0.5px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+}
+.benefit .about-title {
+  padding: 0 16px 16px;
+  font-size: var(--title-font-small);
+}
+.benefit .benefit-wrapper ul {
+  font-size: var(--main-font-15);
+  padding: 0 10px 10px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.benefit .benefit-wrapper ul > li:first-child {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  margin: 0 20px 15px 0;
+  background-color: #FDFDF3;
+  border: 1px solid #000;
+  border-radius: 50%;
+  /* overflow: hidden; */
+}
+.benefit .benefit-wrapper ul li:first-child img {
+  width: 100%;
+}
+.benefit .benefit-wrapper ul h3 {
+  font-weight: 900;
+}
+.benefit .benefit-wrapper ul p {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* locations */
+.about-locations {
+  padding: 20px 16px 16px;
+  text-align: center;
+}
+.about-locations h4 {
+  padding: 15px 20px 30px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: var(--main-font-15);
+  word-break: keep-all;
+}
+.about-locations .about-locations-list li {
+  margin-bottom: 16px;
+  position: relative;
+}
+.about-locations .about-locations-list li p {
+  font-weight: 900;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+.about-locations .about-locations-list li a {
+  display: block;
+  padding: 20px 20px 45px;
+  border: 3px solid var(--main-color);
+}
+.about-locations .about-locations-list li a img {
+  height: 40px;
+}
