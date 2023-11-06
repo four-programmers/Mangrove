@@ -1,16 +1,181 @@
 @charset "utf-8";
+.journal-menu {
+  padding-top: 130px;
+}
 .post {
   cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px 16px;
+  position: relative;
 }
+
 .post-interview {
+  padding-top: 110px;
+  display: none;
+}
+.post-interview .back-btn {
   display: none;
 }
 .post.active {
   display: none;
 }
 .post img {
-  width: 92%;
+  width: 100%;
   height: 55vw;
   margin: 10px auto;
   object-fit: cover;
+}
+.post h3 {
+  font-size: var(--main-font-middle);
+  font-weight: 700;
+}
+.post p {
+  font-size: var(--ft-font);
+}
+.journal-menu-wrapper .journal-menu {
+  font-family: var(--font-en);
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  
+}
+.journal-menu-wrapper .journal-menu li {
+  border: 1px solid var(--main-color);
+  border-right: none;
+  padding: 8px 12px 6px;
+}
+.journal-menu-wrapper .journal-menu li:nth-child(1) {
+  color: #fff;
+  background-color:var(--main-color);
+}
+.journal-menu-wrapper .journal-menu li:nth-child(3) {
+border-right: 1px solid var(--main-color);
+}
+.journal-menu-wrapper .search-wrapper {
+  margin: 30px auto;
+  display: flex;
+  border-bottom: 1px solid var(--main-color);
+  width: 56%;
+  justify-content: center;
+}
+.journal-menu-wrapper .search-wrapper span {
+  border: none;
+}
+.journal-menu-wrapper input {
+ 
+  
+  border: none;
+  font-family: var(--font-en);
+  font-size: 1rem;
+}
+
+.post a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: var(--point-color-lightGreen);
+  border-radius: 50%;
+  
+  position: absolute;
+  top: 40%; left: 50%;
+  transform: translate(-40%,-50%);
+}
+.post a span{
+  width: 35px;
+  height: 35px;
+line-height: 35px;
+text-align: center;
+font-size: 1.8rem;
+}
+
+.post-interview {
+  padding-top: 130px;
+} 
+.post-interview .post-interview-title .title-wrapper {
+  margin: 22.5px 0;
+  padding: 0px 16px;
+}
+.post-interview .post-interview-title .title-wrapper h3 {
+  font-size: var( --main-font-middle);
+  font-weight: 900;
+}
+.post-interview .post-interview-title {
+  
+  width: 95vw;
+  margin: 0 auto;
+  border-bottom:1px var(--point-color-lightGreen) solid 
+  ;
+  
+}
+.post-interview .post-interview-top  {
+  border-bottom: 1px solid var(--main-color);
+}
+.post-interview .post-interview-bottom  {
+  border-bottom: 1px solid var(--main-color);
+}
+.post-interview p {
+  font-size: var(--main-font-15);
+  margin: 22.5px 0;
+  padding: 0px 16px;
+}
+.post-interview .post-interview-top strong,
+.post-interview .post-interview-bottom strong{
+  display: block;
+  width: 90%;
+  margin: 22.5px auto;
+ 
+}
+.post-interview .post-interview-bottom img {
+  margin-top: 40px;
+}
+.post-interview .post-interview-footer .link-icon {
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+}
+.post-interview .post-interview-footer .link-icon img {
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+}
+.post-interview .post-interview-title2 img {
+  height: 40vh;
+  object-fit: cover;
+  width: 100%;
+}
+.post-interview .post-interview-bottom3 strong {
+  margin-top: 22px;
+  text-align: center;
+} 
+.post-interview .post-interview-bottom3 img {
+  margin-top: 15px;
+}
+.post-interview .post-interview-top4 {
+  text-align: center;
+} 
+.post-interview .post-interview-bottom4 p {
+  margin-top: 22px;
+  text-align: center;
+} 
+.post-interview .post-interview-bottom4 img {
+margin-top: 30px ;
+}
+.post-interview .post-interview-bottom4 figcaption {
+  font-weight: 300;
+  font-family: var(--font-en);
+  font-size: 0.75rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.post-interview .post-interview-top6 {
+  text-align: center;
+} 
+.post-interview .post-interview-bottom6 p strong{
+  margin: 0;
+  margin-top: 22px;
+  font-size: var( --main-font-18);
+}
+.post-interview .post-interview-bottom6 img {
+  margin-top: 25px;
 }
