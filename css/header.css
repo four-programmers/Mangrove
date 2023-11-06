@@ -179,10 +179,9 @@ header .book-wrapper.active ul li a .inner-txt::after {
   height: 20px;
   background: url(../images/arrow.svg) no-repeat 50%;
   position: absolute;
- top: 0;
- 
-
-
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
 }
 header .book-wrapper.active .live-box {
   background-color: var(--bg-color-purple);
