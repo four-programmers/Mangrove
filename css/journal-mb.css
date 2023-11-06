@@ -121,7 +121,10 @@
   margin: 22.5px auto;
 }
 .post-interview .post-interview-bottom img {
-  margin-top: 40px;
+  margin: 40px auto 0;
+  width: 95%;
+  display: flex;
+  justify-content: center;
 }
 .post-interview .post-interview-footer .link-icon {
   margin: 100px auto;
