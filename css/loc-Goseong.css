@@ -1,24 +1,39 @@
 @charset "utf-8";
-.membership a, .cor-programs a {
+.membership a,
+.cor-programs a {
   display: block;
   text-align: center;
   width: 100%;
   margin: 30px 0 40px;
-  padding : 25px 1em;
+  padding: 25px 1em;
   font-size: var(--btn-font);
   font-weight: 900;
 }
+/***** section-overview *****/
+.overview p {
+  padding-bottom: 1em;
+}
 /***** section-work-lounge *****/
-.work-lounge .zone-wrapper{
-padding-bottom: 30px;
-margin-bottom: 16px;
+.work-lounge .zone-wrapper {
+  padding-bottom: 30px;
+  margin-bottom: 16px;
+}
+
+/***** section-stay *****/
+.room {
+  border-bottom: 1px solid black;
+}
+
+/***** section-AnS *****/
+.AnS {
+  border-bottom: none;
 }
 
 /***** section-membership *****/
 .membership {
-  background-color: var( --bg-color-lightMint);
+  background-color: var(--bg-color-lightMint);
 }
-.membership p{
+.membership p {
   padding-bottom: 40px;
 }
 .membership-wrapper {
@@ -26,7 +41,6 @@ margin-bottom: 16px;
   display: grid;
   grid-template-rows: 1fr repeat(3, 3fr);
   justify-items: center;
-  padding: 0 16px;
   border: 1px solid black;
   color: var(--point-color-purple);
 }
@@ -34,18 +48,20 @@ margin-bottom: 16px;
   display: flex;
   align-items: center;
 }
-.membership-wrapper .membership-logo img{
-  height: 150px;
+.membership-wrapper .membership-logo img {
+  height: 105px;
 }
 .membership-wrapper .membership-desc {
-  border-top: 1px solid black;
+  width: 100%;
+  border: 1px solid black;
+  padding: 0 16px;
 }
 .membership-wrapper .membership-desc .membership-title {
   display: flex;
   flex-direction: column;
   padding: 30px 30px 16px;
 }
-.membership-wrapper .membership-desc .membership-title strong:first-child{
+.membership-wrapper .membership-desc .membership-title strong:first-child {
   font-size: 1.406rem;
 }
 .membership-wrapper .membership-desc .membership-title strong:last-child {
@@ -69,20 +85,34 @@ margin-bottom: 16px;
   padding: 30px 20px 20px;
   border: 1px solid black;
 }
-.membership .book a {
-  border: 2px solid var(--point-color-purple);
+.membership .member .member-btn {
+  font-family: var(--font-en);
+}
+.membership .book .book-btn {
+  border: 3px solid var(--point-color-purple);
   color: var(--point-color-purple);
+  font-family: var(--font-en);
+}
+.membership .member .member-btn:hover {
+  background-color: var(--point-color-lightGreen);
+}
+.membership .book .book-btn:hover {
+  transform: scaleX(1.05);
+  background-color: var(--point-color-lightGreen);
+  color: var(--point-color-purple);
+  border: 3px solid var(--point-color-lightGreen);
 }
 
 /***** section-corPrograms *****/
 .cor-programs {
   background-color: var(--bg-color-lightMint);
 }
-.cor-programs a {
+.cor-programs .inquiry-btn {
   background-color: var(--main-color);
   color: var(--point-color-lightGreen);
+  font-family: var(--font-en);
 }
-.cor-programs .program-txt strong{
+.cor-programs .program-txt strong {
   padding-bottom: 20px;
   margin-bottom: 16px;
   font-weight: bold;
@@ -94,4 +124,5 @@ margin-bottom: 16px;
 /***** section-neighbor*****/
 .neighbor {
   background-color: var(--bg-color-yellow);
+  border-top: none;
 }
