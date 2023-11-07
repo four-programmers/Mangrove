@@ -98,7 +98,7 @@
   font-size: var(--main-font-middle);
   font-weight: 900;
 }
-.post-interview .post-interview-title {
+.post-interview .post-interview-title .title-container {
   width: 95vw;
   margin: 0 auto;
   border-bottom: 1px var(--point-color-lightGreen) solid;
@@ -136,6 +136,9 @@
   width: 30px;
   height: 30px;
 }
+.post-interview .post-interview-top {
+  text-align: center;
+}
 .post-interview .post-interview-title2 img {
   height: 40vh;
   object-fit: cover;
@@ -148,9 +151,7 @@
 .post-interview .post-interview-bottom3 img {
   margin-top: 15px;
 }
-.post-interview .post-interview-top4 {
-  text-align: center;
-}
+
 .post-interview .post-interview-bottom4 p {
   margin-top: 22px;
   text-align: center;
@@ -165,9 +166,7 @@
   text-align: center;
   margin-bottom: 60px;
 }
-.post-interview .post-interview-top6 {
-  text-align: center;
-}
+
 .post-interview .post-interview-bottom6 p strong {
   margin: 0;
   margin-top: 22px;
@@ -191,7 +190,4 @@
 }
 .post-interview .post-interview-middle img {
   margin: 15px auto;
-}
-.post-interview .post-interview-top5 {
-  text-align: center;
 }
