@@ -1,0 +1,13 @@
+header h1 {
+  width: 868px;
+}
+.intro {
+  padding: 350px 0 40px;
+}
+.intro p {
+  padding: 0 16px;
+  font-size: 24px;
+  text-align: center;
+  width: 57.8%;
+  margin: 0 auto;
+}

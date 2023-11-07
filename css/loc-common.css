@@ -39,6 +39,9 @@ section {
   padding-bottom: 15px;
   margin-bottom: 16px;
 }
+.big-btn, .book-btn {
+  cursor: url(../images/book-cursor-02.svg) 15 5, auto;
+}
 .big-btn:hover {
   transform: scale(1.1);
   font-family: var(--font-en);
@@ -49,19 +52,17 @@ a.book:hover {
   color: var(--main-color);
 }
 /***** header *****/
-header {
+/* header {
   height: 210px;
-}
+} */
 header h1 {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  margin: 0 16px 0;
 }
 
 /***** section-intro *****/
 .intro {
-  padding: 246px 0 40px;
+  padding: 30vw 0 40px;
 }
 
 .intro .intro-slide {
@@ -69,6 +70,13 @@ header h1 {
 }
 
 .intro .intro-slide img {
+  width: 100%;
+}
+.intro .video-wrapper {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.intro .video-wrapper video {
   width: 100%;
 }
 
@@ -208,6 +216,9 @@ header h1 {
   margin: 0 0 9px;
   padding: 0 0 6px;
 }
+.neighbor .neighbor-txt a {
+  border-bottom: 1px solid black;
+}
 
 /***** section-FAQ *****/
 .faq .faq-wrapper {
@@ -242,6 +253,7 @@ header h1 {
   transform: translateY(-50%);
   left: -30px;
 }
+.faq .faq-wrapper .faq-item .faq-title .toggle-btn::before
 .faq .faq-wrapper .faq-item .toggle-txt {
   height: 0;
   overflow: hidden;
@@ -250,3 +262,4 @@ header h1 {
   height: fit-content;
   padding: 7px 20px 6px;
 }
+.faq .faq-wrapper .faq-item .toggle-txt.active
