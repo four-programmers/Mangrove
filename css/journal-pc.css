@@ -10,6 +10,9 @@
   .journal-menu-wrapper .search-wrapper {
     width: 300px;
   }
+  .journal-menu-wrapper .journal-menu li {
+    padding: 10px 15px 8px;
+  }
   .post {
     padding: 35px 40px 25px 26.625vw;
 
