@@ -60,6 +60,23 @@ header .menu-wrapper .global-menu > li > a {
 header .menu-wrapper .global-menu ul {
   display: none;
 }
+
+/* book active */
+header .book-wrapper.active {
+  flex-direction: row;
+}
+header .book-wrapper.active .live-box li:nth-child(2):hover,
+header .book-wrapper.active .live-box li:nth-child(3):hover, 
+header .book-wrapper.active .live-box li:nth-child(4):hover {
+  background-color: var(--main-color);
+  color: var(--bg-color-yellow);
+}
+header .book-wrapper.active .work-box li:nth-child(2):hover, 
+header .book-wrapper.active .work-box li:nth-child(3):hover {
+  background-color: var(--main-color);
+  color: var(--bg-color-yellow);
+}
+
   /* scroll */
   header.scroll {
     height: 57px;
