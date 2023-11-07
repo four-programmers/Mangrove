@@ -29,6 +29,7 @@ header .btn-wrapper {
 header .btn-wrapper .book-btn {
   padding: 5px 20px 0;
   animation: none;
+  cursor: url(../images/book-cursor-02.svg) 15 5, auto;
 }
 header .btn-wrapper .menu-btn {
   display: none;
@@ -90,11 +91,15 @@ header .book-wrapper.active .work-box li:nth-child(3):hover {
   header.scroll .header-wrapper {
     padding-bottom: 15px;
   }
+  header.scroll .header-wrapper .lang-pc:hover {
+    color: var(--point-color-green);
+  }
   header.scroll .btn-wrapper .book-btn {
     display: block;
     height: 57px;
     width: 136px;
     animation: bookAni 4s infinite;
+    cursor: url(../images/book-cursor-02.svg) 15 5, auto;
   }
   header.scroll .btn-wrapper .book-btn::after {
     content: "!";
