@@ -129,6 +129,9 @@ header .book-wrapper.active .work-box li:nth-child(3):hover {
     top: 3px;
     right: 0;
   }
+  header .menu-wrapper .global-menu ul.active li:last-child::after {
+    display: none;
+  }
   header .menu-wrapper .global-menu ul.active li a {
     padding: 4px 10px 0;
   }

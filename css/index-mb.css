@@ -73,7 +73,10 @@
   position: absolute;
   top: 0;
 }
-.main .main-slide-img .slide-wrapper .img1 {
+.main .main-slide-img .slide-wrapper {
+  animation: mainSlideImg 65s infinite;
+}
+/* .main .main-slide-img .slide-wrapper .img1 {
   background: url(../images/index/main_img_1.png) no-repeat 50% / cover;
   background-size: 95% 90%;
 }
@@ -117,14 +120,14 @@
   background: url(../images/index/main_img_11.png) no-repeat 50% / cover;
   background-size: 95% 90%;
 }
-.main .main-slide-img .slide-wrapper .img1 {
+.main .main-slide-img .slide-wrapper .img12 {
   background: url(../images/index/main_img_12.png) no-repeat 50% / cover;
   background-size: 95% 90%;
 }
-.main .main-slide-img .slide-wrapper .img1 {
+.main .main-slide-img .slide-wrapper .img13 {
   background: url(../images/index/main_img_13.png) no-repeat 50% / cover;
   background-size: 95% 90%;
-}
+} */
 .main .main-slide-img .slide-wrapper .swipe {
   opacity: 1;
 }
@@ -158,27 +161,34 @@
   border: 1px solid #000;
   padding: 6px 12px 5px;
 }
-.locations .locations-title .locations-menu li.active {
-  background-color: #000;
+
+/* locations-menu active */
+.locations .locations-title .locations-menu .locations-menu-list.active {
+  background-color: var(--main-color);
   color: #FFF;
 }
-/* locations-tap */
+
+/* locations-slide */
+.locations .main-slide {
+  padding-bottom: 32px;
+  overflow: hidden;
+}
 .locations .locations-tab {
   width: 100%;
   height: 74.7201vh;
   display: flex;
   flex-direction: row;
-  position: relative;
 }
 .locations .locations-tab .tab {
   background-color: #FFF;
-  width: 100%;
+  width: 102%;
   height: 100%;
+  border-right: 1px solid #000;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  top: 0;
+  flex-shrink: 0;
+  position: relative;
 }
 .locations .locations-tab .tab > div {
   width: 65%;
@@ -186,31 +196,31 @@
 }
 .locations .locations-tab .tab span {
   text-indent: -9999px;
-  width: 100%;
-  height: 426px;
+  width: 47vw;
+  height: 50vh;
   margin-bottom: 35px;
   position: absolute;
   top: calc(10% + 1.563rem);
 }
 .locations .locations-tab .tab-goseong span {
   background: url(../images/index/tab-goseong.png) no-repeat 50% / cover;
-  background-size: 292.88px 426px;
+  background-size: 100% 100%;
 }
 .locations .locations-tab .tab-sinchon span {
   background: url(../images/index/tab-sinchon.png) no-repeat 50% / cover;
-  background-size: 329.24px 426px;
+  background-size: 100% 100%;
 }
 .locations .locations-tab .tab-dongdaemun span {
   background: url(../images/index/tab-dongdaemun.png) no-repeat 50% / cover;
-  background-size: 292.88px 426px;
+  background-size: 100% 100%;
 }
 .locations .locations-tab .tab-sinseol span {
   background: url(../images/index/tab-sinseol.png) no-repeat 50% / cover;
-  background-size: 292.88px 426px;
+  background-size: 100% 100%;
 }
 .locations .locations-tab .tab-soongin span {
   background: url(../images/index/tab-soongin.png) no-repeat 50% / cover;
-  background-size: 292.88px 426px;
+  background-size: 100% 100%;
 }
 .locations .locations-tab .tab .tab-txt {
   text-align: center;
@@ -449,6 +459,7 @@
   height: 45px;
   background-color: var(--main-color);
   color: var(--bg-color-mint);
+  font-family: var(--font-ko);
   font-size: 1.063rem;
   font-weight: 700;
 }
@@ -461,4 +472,60 @@
 .subs .subs-img img {
   width: 100%;
   aspect-ratio: 1160 / 1126;
+}
+
+/* main slide img ani */
+@keyframes mainSlideImg {
+  0% {
+    background: url(../images/index/main_img_1.png) no-repeat 50% / cover;
+    background-size: 95% 90%;
+  }
+  8% {
+    background: url(../images/index/main_img_2.png) no-repeat 50% / cover;
+    background-size: 95% 90%;
+  }
+  16% {
+    background: url(../images/index/main_img_3.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  24% {
+    background: url(../images/index/main_img_4.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  36% {
+    background: url(../images/index/main_img_5.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  40% {
+    background: url(../images/index/main_img_6.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  48% {
+    background: url(../images/index/main_img_7.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  56% {
+    background: url(../images/index/main_img_8.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  64% {
+    background: url(../images/index/main_img_9.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  72% {
+    background: url(../images/index/main_img_10.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  80% {
+    background: url(../images/index/main_img_11.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  88% {
+    background: url(../images/index/main_img_12.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
+  100% {
+    background: url(../images/index/main_img_13.png) no-repeat 50% / cover;
+  background-size: 95% 90%;
+  }
 }

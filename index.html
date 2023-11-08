@@ -22,7 +22,9 @@
   <link rel="stylesheet" href="./css/index-pc.css">
   <!-- script -->
   <script defer src="./js/header.js"></script>
+  <script defer src="./js/index.js"></script>
   <!-- <script defer src="./js/index.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -126,55 +128,57 @@
       <p class="contents-des">하루부터 유쾌하게 살아보는 ‘리브앤스테이’부터<br>도심에서 벗어나 기분 좋게 몰입하는 ‘워크앤스테이’까지,<br>다양한 라이프스타일이 담긴 맹그로브의 지점들을
         살펴보세요.</p>
       <ul class="locations-menu">
-        <li>Goseong</li>
-        <li>Sinchon</li>
-        <li>Dongdaemun</li>
-        <li>Sinseol</li>
-        <li>Soongin</li>
+        <li class="locations-menu-list active">Goseong</li>
+        <li class="locations-menu-list">Sinchon</li>
+        <li class="locations-menu-list">Dongdaemun</li>
+        <li class="locations-menu-list">Sinseol</li>
+        <li class="locations-menu-list">Soongin</li>
       </ul>
     </div>
-    <ul class="locations-tab">
-      <li class="tab-goseong tab">
-        <div><img src="./images/index/logo-goseong.svg" alt="맹그로브 고성 로고"></div>
-        <span>고성 드로잉 이미지</span>
-        <div class="tab-txt">
-          <h3>맹그로브 고성</h3>
-          <p>기분 좋은 몰입을 위한 한적한 바다 앞 워크앤스테이</p>
-        </div>
-      </li>
-      <li class="tab-sinchon tab">
-        <div><img src="./images/index/logo-sinchon.svg" alt="맹그로브 신촌 로고"></div>
-        <span>신촌 드로잉 이미지</span>
-        <div class="tab-txt">
-          <h3>맹그로브 신촌</h3>
-          <p>활기찬 도시 인프라와 편리한 일상을 누리는 코리빙 하우스</p>
-        </div>
-      </li>
-      <li class="tab-dongdaemun tab">
-        <div><img src="./images/index/logo-dongdaemun.svg" alt="맹그로브 동대문 로고"></div>
-        <span>동대문 드로잉 이미지</span>
-        <div class="tab-txt">
-          <h3>맹그로브 동대문</h3>
-          <p>교통, 문화의 중심지에서 여행하듯 머무는 코리빙 하우스</p>
-        </div>
-      </li>
-      <li class="tab-sinseol tab">
-        <div><img src="./images/index/logo-sinseol-1.svg" alt="맹그로브 신설 로고"></div>
-        <span>신설 드로잉 이미지</span>
-        <div class="tab-txt">
-          <h3>맹그로브 신설</h3>
-          <p>다채로운 공용 공간을 갖춘 대형 코리빙 하우스</p>
-        </div>
-      </li>
-      <li class="tab-soongin tab">
-        <div><img src="./images/index/logo-soongin-1.svg" alt="맹그로브 숭인 로고"></div>
-        <span>숭인 드로잉 이미지</span>
-        <div class="tab-txt">
-          <h3>맹그로브 숭인</h3>
-          <p>24명의 이웃들이 모여 사는 안락한 코리빙 하우스</p>
-        </div>
-      </li>
-    </ul>
+    <div class="main-slide">
+      <ul class="locations-tab swiper-wrapper">
+        <li class="tab-goseong tab swiper-slide">
+          <div><img src="./images/index/logo-goseong.svg" alt="맹그로브 고성 로고"></div>
+          <span>고성 드로잉 이미지</span>
+          <div class="tab-txt">
+            <h3>맹그로브 고성</h3>
+            <p>기분 좋은 몰입을 위한 한적한 바다 앞 워크앤스테이</p>
+          </div>
+        </li>
+        <li class="tab-sinchon tab swiper-slide">
+          <div><img src="./images/index/logo-sinchon.svg" alt="맹그로브 신촌 로고"></div>
+          <span>신촌 드로잉 이미지</span>
+          <div class="tab-txt">
+            <h3>맹그로브 신촌</h3>
+            <p>활기찬 도시 인프라와 편리한 일상을 누리는 코리빙 하우스</p>
+          </div>
+        </li>
+        <li class="tab-dongdaemun tab swiper-slide">
+          <div><img src="./images/index/logo-dongdaemun.svg" alt="맹그로브 동대문 로고"></div>
+          <span>동대문 드로잉 이미지</span>
+          <div class="tab-txt">
+            <h3>맹그로브 동대문</h3>
+            <p>교통, 문화의 중심지에서 여행하듯 머무는 코리빙 하우스</p>
+          </div>
+        </li>
+        <li class="tab-sinseol tab swiper-slide">
+          <div><img src="./images/index/logo-sinseol-1.svg" alt="맹그로브 신설 로고"></div>
+          <span>신설 드로잉 이미지</span>
+          <div class="tab-txt">
+            <h3>맹그로브 신설</h3>
+            <p>다채로운 공용 공간을 갖춘 대형 코리빙 하우스</p>
+          </div>
+        </li>
+        <li class="tab-soongin tab swiper-slide">
+          <div><img src="./images/index/logo-soongin-1.svg" alt="맹그로브 숭인 로고"></div>
+          <span>숭인 드로잉 이미지</span>
+          <div class="tab-txt">
+            <h3>맹그로브 숭인</h3>
+            <p>24명의 이웃들이 모여 사는 안락한 코리빙 하우스</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <!-- community -->
@@ -316,15 +320,17 @@
 
   <!-- subs -->
   <section class="subs">
-    <h3>맹그로브의 새로운 소식을 가장 먼저 만나보세요.</h3>
-    <form>
-      <ul>
-        <li><span>이메일 주소</span><br><input type="email"></li>
-        <li><span>이름</span><br><input type="text"></li>
-        <li><input type="checkbox"><span>개인정보 수집 및 이용</span>에 동의합니다</li>
-      </ul>
-      <button type="submit">구독 신청하기</button>
-    </form>
+    <div>
+      <h3>맹그로브의 새로운 소식을 가장 먼저 만나보세요.</h3>
+      <form>
+        <ul>
+          <li><span>이메일 주소</span><br><input type="email"></li>
+          <li><span>이름</span><br><input type="text"></li>
+          <li><input type="checkbox"><span>개인정보 수집 및 이용</span>에 동의합니다</li>
+        </ul>
+        <button type="submit">구독 신청하기</button>
+      </form>
+    </div>
     <span class="subs-img"><img src="./images/index/mail.webp" alt="구독 이미지"></span>
   </section>
 
@@ -365,10 +371,12 @@
         <li>상호 : 주식회사 엠지알브이 | 대표 : 조강태</li>
         <li>사업자번호 : 218-86-01128</li>
         <li>통신판매업신고 : 2021-서울성동-01782</li>
-      </ul>
-      <ul class="bottom-list5">
-        <li><a href="#">개인정보 처리 방침</a></li>
-        <li><a href="#">서비스 이용약관</a></li>
+        <li>
+          <ul class="bottom-list5">
+            <li><a href="#">개인정보 처리 방침</a></li>
+            <li><a href="#">서비스 이용약관</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </footer>

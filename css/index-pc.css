@@ -99,14 +99,12 @@
   }
   .locations .locations-tab {
     width: 100%;
-    overflow: hidden;
     white-space: nowrap;
     display: flex;
   }
   .locations .locations-tab .tab {
-    width: 50%;
+    width: 51%;
     height: 100%;
-    border-right: 1px solid #000;
     position: relative;
     flex-shrink: 0;
   }
@@ -117,6 +115,7 @@
     display: grid;
     grid-template-columns: 28% 72%;
     position: relative;
+    overflow: hidden;
   }
   .community .content-wrapper {
     padding: 40px 10px 20px;
@@ -218,5 +217,85 @@
     position: absolute;
     top: 0;
     right: 0;
+  }
+
+  /* faq */
+  .faq {
+    padding: 40px 60px 60px;
+    display: grid;
+    grid-template-columns: 28% 72%;
+  }
+  .faq .faq-list {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .faq .faq-list > li {
+    padding: 20px 0 15px;
+    background-size: 30px 30px;
+  }
+  .faq .faq-list .list-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.4;
+  }
+  .faq .faq-list .list-txt {
+    font-size: var(--main-font-16);
+  }
+
+  /* subs */
+  .subs {
+    padding: 40px 60px 60px;
+    display: grid;
+    grid-template-columns: 72% 28%;
+  }
+  .subs h3 {
+    font-size: var(--title-font);
+    font-weight: 500;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+  .subs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .subs ul li {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .subs ul li:nth-child(1) {
+    padding: 0 5px 5px 0;
+  }
+  .subs ul li:nth-child(2) {
+    padding: 0 0 5px 5px;
+  }
+  .subs ul li:nth-child(1) input, 
+  .subs ul li:nth-child(2) input {
+    padding: 15px 14px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  .subs ul li:nth-child(3) {
+    grid-column: span 2;
+    padding-bottom: 0;
+    line-height: 1.8em;
+  }
+  .subs ul li span {
+    font-size: var(--main-font-16);
+  }
+  .subs button {
+    font-size: 1.25rem;
+    height: 52px;
+    line-height: 56px
+  }
+  .subs .subs-img {
+    padding: 0 10px 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .subs .subs-img img {
+    max-width: 180px;
+    position: absolute;
+    bottom: 0;
+    right: 8%;
   }
 }
