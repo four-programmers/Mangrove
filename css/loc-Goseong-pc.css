@@ -1,0 +1,10 @@
+/***** AnS *****/
+.amenity:nth-child(2) {
+  padding-bottom: 80px;
+}
+
+/***** FAQ *****/
+.faq .content-wrapper .faq-wrapper {
+  width: 33.3333%;
+  padding: 0 10px;
+}

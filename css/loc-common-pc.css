@@ -1,8 +1,27 @@
+h3 {
+  font-size: var(--title-font-middle);
+}
+.title-wrapper {
+  width: 25%;
+  padding: 0 10px;
+}
+.content-wrapper {
+  padding: 0 10px;
+  width: 75%;
+}
+section {
+  display: flex;
+  padding: 40px 60px 20px;
+}
+
 header h1 {
   width: 868px;
 }
+
+/***** intro *****/
 .intro {
   padding: 350px 0 40px;
+  display: block;
 }
 .intro p {
   padding: 0 16px;
@@ -10,4 +29,105 @@ header h1 {
   text-align: center;
   width: 57.8%;
   margin: 0 auto;
+}
+
+/***** overview *****/
+.overview {
+  display: flex;
+  justify-content: space-evenly;
+}
+.overview .content-wrapper {
+  display: flex;
+  padding-bottom: 40px;
+}
+.overview img {
+  max-height: 70vh;
+  width: auto;
+  padding: 0 10px;
+}
+.overview p {
+  width: 80%;
+  font-size: var(--text-font);
+  padding: 0 10px;
+}
+.overview-txt-wrapper p {
+  width: 100%;
+}
+.overview-txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+/***** room *****/
+.room .content-wrapper {
+  padding: 0;
+}
+.room .space {
+  width: 50%;
+  padding: 0 10px;
+}
+.room .room-item-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.room .room-item {
+  width: 33.3333%;
+  padding: 0 10px 40px;
+  margin-bottom: 0;
+}
+
+/***** friends *****/
+.friends {
+  width: 75%;
+  position: relative;
+  left: 23%;
+}
+.friends h4 {
+  width: 33.3333%;
+  font-size: var(--main-font-18);
+}
+.friends-item-wrapper {
+  width: 66.6667%;
+  display: flex;
+}
+.friends .item {
+  border-top: none;
+  flex-direction: column;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  width: 33.3333%;
+}
+.friends .item img {
+  width: 100%;
+  padding: 0;
+}
+.friends .item h5 {
+  margin-top: 20px;
+  padding:10px 10px 0 0;
+  border-top: 1px solid black;
+  width: 100%;
+}
+
+/***** neighbor *****/
+.neighbor .content-wrapper p{
+  padding-bottom: 20px;
+}
+.neighbor .content-wrapper .neighbor-txt {
+  width: 100%;
+}
+.neighbor .content-wrapper .neighbor-txt p {
+  width: 33.3333%;
+  margin: 0;
+  padding: 0 10px;
+}
+
+
+/***** FAQ *****/
+.faq .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.faq .content-wrapper .faq-wrapper {
+  width: 50%;
+  padding: 0 10px;
 }

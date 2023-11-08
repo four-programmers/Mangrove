@@ -21,11 +21,13 @@
   --title-font-lage: 2.625rem; /* 42px */
   --title-font: 1.875rem; /* 30px */
   --title-font-small: 1.46484375rem; /* 23.4375px */
+  --title-font-middle: 2.109rem; /* 33.75px */
   --hd-font: 1.563rem; /* 25px */
   --hd-font-small: 0.833rem; /* 13.3333px */
   --ft-font: 0.875rem; /* 14px */
   --ft-font-small: 0.82rem; /* 13.125px */
   --btn-font: 1.7578125rem; /* 28.125px */
+  --text-font: 1.265625rem; /* 20.25px */
   --post-font-title: 1.6875rem; /* 27px */
   --main-font-18: 1.125rem; /* 18px */
   --main-font-middle: 1.055rem; /* 16.875px */
@@ -34,6 +36,7 @@
 
   /* color */
   --main-color: #1f1e1d;
+  --faq-bg-color: #f1efeb;
   --bg-color-lightBlue: #e5f0f3;
   --bg-color-blue: #405abe;
   --bg-color-yellow: #fcf5db;
