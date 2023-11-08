@@ -2,7 +2,7 @@
 
 @media (width >= 1200px) {
   .journal-menu {
-    padding-top: 258px;
+    padding-top: 270px;
   }
   .post img {
     display: none;
@@ -71,6 +71,7 @@
   }
   .post-interview {
     padding-top: 258px;
+    line-height: 1.5;
   }
   .post-interview .post-interview-title img {
     width: 100%;
@@ -138,5 +139,11 @@
   .post-interview .post-interview-bottom p strong {
     font-size: 1.25rem;
     padding: 0;
+  }
+  .post-interview .post-interview-bottom7 strong {
+    text-align: center;
+  }
+  .post-interview .post-interview-bottom2 strong {
+    text-align: center;
   }
 }
