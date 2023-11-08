@@ -1,9 +1,0 @@
-@media (width >=1200px) {
-  footer .ft-top {
-    display: flex;
-    padding: 40px 60px 60px;
-  }
-  footer .ft-top h6 {
-    width: 300px;
-  }
-}
