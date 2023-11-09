@@ -3,6 +3,30 @@
   padding-bottom: 80px;
 }
 
+.furniture-wrapper .item {
+  width: 200px;
+  padding-right: 0;
+}
+.friends-item-wrapper .item span {
+  width: 200px;
+}
+
+.furniture-wrapper .item span img {
+  width: 80%;
+}
+
+.other-wrapper {
+  display: flex;
+}
+/***** membership *****/
+.membership .membership-wrapper {
+  grid-template-rows: 1fr repeat(2, 3fr);
+  grid-template-columns: 1fr 1fr;
+}
+.membership .membership-logo {
+  grid-column: span 2;
+}
+
 /***** FAQ *****/
 .faq .content-wrapper .faq-wrapper {
   width: 33.3333%;
