@@ -5,18 +5,28 @@ const mainSlide = new Swiper('.main-slide', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  slidesPerView: 1,
 });
 
 // locations-menu active
-const locationsMenuList = document.querySelectorAll('.locations-menu-list');
+const locationsMenuList = document.querySelectorAll('.swiper-pagination-bullet');
 
 locationsMenuList.forEach((list) => {
-  list.addEventListener("click", (e) => {
+  locationsMenuList.addEventListener("click", (list) => {
     const target = e.target;
-    e.forEach((li) => {
-      li.classList.remove("active");
-      target.parentNode.classList.add("active")
-    });
+    list.classList.remove("active");
+    e.target.parentNode.classList.add("active");
   });
 });
+
+// const subSlide = new Swiper('.sub-slide', {
+//   loop: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+//   slidesPerView: 1,
+//   autoplay: {
+//     delay: 2500,
+//     disableOnInteraction: false,
+//   },
+// });
