@@ -145,8 +145,21 @@
   }
   .about-locations .about-locations-list li a {
     padding: 30px 20px 60px;
+    cursor: url(../images/swipe-cursor.svg) 12 12, auto;
+  }
+  .about-locations .about-locations-list li a:hover {
+    background-color: var(--bg-color-mint);
   }
   .about-locations .about-locations-list li a img {
     height: 60px;
+  }
+  .about-locations .main-slide .swiper-wrapper .swiper-button-next::before {
+    content: "\35";
+    color: inherit;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }

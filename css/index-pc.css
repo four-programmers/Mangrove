@@ -64,17 +64,22 @@
   .main .txt-wrapper .main-txt {
     padding: 50px 20px;
   }
+  .main .more-btn:hover {
+    padding-right: 60px;
+  }
 
   /* locations */
   .locations {
     padding: 40px 0 40px;
     display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 30% 70%;
   }
   .locations .locations-title {
-    margin-left: 60px;
-    padding: 0 10px 0;
+    padding: 0 30px 0 86px;
     border-right: 2px solid #000;
+    background-color: #FFF;
+    position: relative;
+    z-index: 100;
   }
   .locations .locations-title .contents-des {
     margin-top: 30px;
@@ -82,33 +87,32 @@
     line-height: 1.5;
     font-size: 1rem;
   }
-  .locations .locations-title .locations-menu {
+  .locations .locations-title .swiper-pagination {
+    width: 100%;
     padding-right: 30px;
     flex-wrap: nowrap;
     flex-direction: column;
   }
-  .locations .locations-title .locations-menu li:first-child {
+  .locations .locations-title .swiper-pagination .swiper-pagination-bullet:first-child {
     border-top: 1px solid #000;
   }
-  .locations .locations-title .locations-menu li {
+  .locations .locations-title .swiper-pagination .swiper-pagination-bullet {
+    width: 110%;
+    height: 100%;
     text-align: left;
     font-size: 1.25rem;
     padding: 9px 0 8px 6px;
     border: none;
     border-bottom: 1px solid #000;
   }
-  .locations .locations-tab {
-    width: 100%;
-    white-space: nowrap;
-    display: flex;
-  }
-  .locations .locations-tab .tab {
+  .locations .main-slide .swiper-wrapper .swiper-slide {
     width: 51%;
-    height: 100%;
-    position: relative;
-    flex-shrink: 0;
+    z-index: 0;
   }
-
+  .locations .main-slide .swiper-wrapper .swiper-slide span:hover {
+    background-size: 100% 100%;
+  }
+  
   /* community */
   .community {
     padding: 0 0 0 60px;
@@ -189,6 +193,9 @@
     top: 0;
     right: 0;
   }
+  .community .more-btn:hover {
+    padding-right: 60px;
+  }
 
   /* journal */
   .journal {
@@ -196,6 +203,9 @@
     display: grid;
     grid-template-columns: 28% 72%;
     position: relative;
+  }
+  .journal .sub-slide {
+    margin-top: 67px;
   }
   .journal .journal-post {
     padding: 0 10px 0;
@@ -214,9 +224,14 @@
     aspect-ratio: 1 / 1;
   }
   .journal .more-btn {
+    height: 50.5px;
+    font-size: 1.375rem;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: 80px;
+  }
+  .journal .more-btn:hover {
+    padding-right: 60px;
   }
 
   /* faq */
