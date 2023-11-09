@@ -41,7 +41,7 @@
 .membership-wrapper {
   background-color: var(--bg-color-yellow);
   display: grid;
-  grid-template-rows: 1fr repeat(3, 3fr);
+  grid-template-rows: 1fr repeat(4, 3fr);
   justify-items: center;
   border: 1px solid black;
   color: var(--point-color-purple);
