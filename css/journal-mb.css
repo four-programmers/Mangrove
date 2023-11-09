@@ -80,9 +80,10 @@
   transform: translate(-40%, -50%);
 }
 .post a span {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  background: url(../images/journal/journal-icon-01.svg) no-repeat 50% /cover;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   font-size: 1.8rem;
 }
