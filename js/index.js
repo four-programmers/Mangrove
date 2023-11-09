@@ -1,32 +1,25 @@
 // locations slide
-const mainSlide = new Swiper('.main-slide', {
+const locationsSlide = new Swiper('.main-slide', {
   loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    390: {
+      slidesPerView: 1,
+    },
+    1200: {
+      slidesPerView: 2,
+    },
+  },
 });
 
-// locations-menu active
-const locationsMenuList = document.querySelectorAll('.swiper-pagination-bullet');
-
-locationsMenuList.forEach((list) => {
-  locationsMenuList.addEventListener("click", (list) => {
-    const target = e.target;
-    list.classList.remove("active");
-    e.target.parentNode.classList.add("active");
-  });
+// journal slide
+const journalSlide = new Swiper('.sub-slide', {
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 });
-
-// const subSlide = new Swiper('.sub-slide', {
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-//   slidesPerView: 1,
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });

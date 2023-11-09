@@ -138,9 +138,6 @@
 }
 
 /* locations-slide */
-.locations .main-slide {
-  padding-bottom: 32px;
-}
 .locations .main-slide .swiper-wrapper {
   width: 100%;
   height: 74.7201vh;
@@ -149,7 +146,7 @@
 }
 .locations .main-slide .swiper-wrapper .swiper-slide {
   background-color: #FFF;
-  width: 102%;
+  width: 100%;
   height: 100%;
   border-right: 1px solid #000;
   display: flex;
@@ -158,41 +155,42 @@
   flex-shrink: 0;
   position: relative;
 }
-.locations .main-slide .swiper-wrapper .swiper-slide > div {
-  width: 65%;
-  margin-bottom: var(--hd-font);
+.locations .main-slide .swiper-wrapper .swiper-slide .slide-link {
+  display: block;
+  width: 80%;
+  height: 100%;
 }
-.locations .main-slide .swiper-wrapper .swiper-slide span {
+.locations .main-slide .swiper-wrapper .swiper-slide .slide-link span {
   text-indent: -9999px;
-  width: 47vw;
-  height: 50vh;
+  width: 100%;
+  height: 60%;
   margin-bottom: 35px;
-  position: absolute;
-  top: calc(10% + 1.563rem);
-  transition: 0.3s;
+  display: block;
+  transition: 0.2s;
 }
-.locations .main-slide .swiper-wrapper .tab-goseong span {
+.locations .main-slide .swiper-wrapper .tab-goseong .slide-link span {
   background: url(../images/index/tab-goseong.png) no-repeat 50% / cover;
-  background-size: 90% 90%;
+  background-size: 74.508vw 90%;
 }
-.locations .main-slide .swiper-wrapper .tab-sinchon span {
+.locations .main-slide .swiper-wrapper .tab-sinchon .slide-link span {
   background: url(../images/index/tab-sinchon.png) no-repeat 50% / cover;
-  background-size: 90% 90%;
+  background-size: 74.508vw  90%;
 }
-.locations .main-slide .swiper-wrapper .tab-dongdaemun span {
+.locations .main-slide .swiper-wrapper .tab-dongdaemun .slide-link span {
   background: url(../images/index/tab-dongdaemun.png) no-repeat 50% / cover;
-  background-size: 90% 90%;
+  background-size: 74.508vw  90%;
 }
-.locations .main-slide .swiper-wrapper .tab-sinseol span {
+.locations .main-slide .swiper-wrapper .tab-sinseol .slide-link span {
   background: url(../images/index/tab-sinseol.png) no-repeat 50% / cover;
-  background-size: 90% 90%;
+  background-size: 74.508vw  90%;
 }
-.locations .main-slide .swiper-wrapper .tab-soongin span {
+.locations .main-slide .swiper-wrapper .tab-soongin .slide-link span {
   background: url(../images/index/tab-soongin.png) no-repeat 50% / cover;
-  background-size: 90% 90%;
+  background-size: 74.508vw  90%;
 }
 .locations .main-slide .swiper-wrapper .swiper-slide .tab-txt {
   text-align: center;
+  width: 65%;
   position: absolute;
   bottom: 0;
 }
@@ -207,6 +205,10 @@
   font-size: var(--main-font-15);
   line-height: 1.6;
   word-break: keep-all;
+}
+.locations .main-slide .swiper-wrapper .swiper-slide div:first-child {
+  width: 65%;
+  margin: 0 auto 25px;
 }
 .locations .main-slide .swiper-wrapper .swiper-slide > div img {
   width: 100%;
@@ -285,31 +287,31 @@
 .journal .journal-title .contents-title {
   line-height: 1.2;
 }
-.journal .journal-post {
+.journal .sub-slide {
+  width: 100%;
+}
+.journal .sub-slide .swiper-wrapper {
+  width: 100%;
+  height: 100%;
   padding: 20px 16px 16px 16px;
   display: flex;
-  overflow: hidden;
 }
-.journal .journal-post ul {
+.journal .sub-slide .swiper-wrapper .swiper-slide {
+  width: 50%;
   margin-right: 20px;
-  width: 36.85vw;
   min-width: 205px;
   word-break: keep-all;
   flex-shrink: 0;
 }
-.journal .journal-post ul li:first-child {
+.journal .sub-slide .swiper-wrapper .swiper-slide li:first-child {
   position: relative;
 }
-.journal .journal-post ul .post-img {
-  display: block;
-}
-.journal .journal-post ul .post-img img {
+.journal .sub-slide .swiper-wrapper .swiper-slide .post-img img {
   object-fit: cover;
-  aspect-ratio: 1;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1;
 }
-.journal .journal-post ul .journal-icon {
+.journal .sub-slide .swiper-wrapper .swiper-slide .journal-icon {
   background-color: var(--point-color-lightGreen);
   border-radius: 50%;
   display: block;
@@ -320,18 +322,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.journal .journal-post ul .journal-icon img {
+.journal .sub-slide .swiper-wrapper .swiper-slide .journal-icon img {
   width: 100%;
   height: 100%;
 }
-.journal .journal-post ul .post-title {
+.journal .sub-slide .swiper-wrapper .swiper-slide .post-title {
   padding-top: 3px;
   margin-top: 10px;
   font-size: var(--main-font-middle);
   font-weight: 900;
   line-height: 1.4;
 }
-.journal .journal-post ul li:last-child {
+.journal .sub-slide .swiper-wrapper .swiper-slide li:last-child {
   font-size: var(--main-font-15);
   font-weight: 500;
   line-height: 1.6;
