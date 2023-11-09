@@ -1,3 +1,4 @@
+/***** common *****/
 h3 {
   font-size: var(--title-font-middle);
 }
@@ -17,6 +18,40 @@ section {
 header h1 {
   width: 868px;
 }
+.swiper-gallery .swiper-button-next,
+.swiper-gallery .swiper-button-prev {
+  background-color: transparent;
+}
+.swiper-gallery .swiper-button-next:after, 
+.swiper-gallery .swiper-button-prev:after {
+  display: none;
+} 
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-width: 50px;
+  --swiper-pagination-bullet-height: 23px;
+}
+.big-btn:hover {
+  transform: scale(1.08);
+}
+.swiper-gallery .swiper-button-prev{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: url(../images/location/고성/slider-arrow-big-prev.svg) 20 40, auto;
+}
+.swiper-gallery .swiper-button-next{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: url(../images/location/고성/slider-arrow-big-next.svg) 20 40, auto;
+}
+.mini-gallery .swiper-slide img {
+  height: calc(25vw - 40px);
+}
 
 /***** intro *****/
 .intro {
@@ -31,22 +66,6 @@ header h1 {
 .intro-slide img {
   height: 80vh;
   object-fit: cover;
-}
-.intro-left-slide {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  cursor: url(../images/location/고성/slider-arrow-big-prev.svg) 20 40, auto;
-}
-.intro-right-slide {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: url(../images/location/고성/slider-arrow-big-next.svg) 20 40, auto;
 }
 .intro p {
   padding: 0 16px;
@@ -81,8 +100,9 @@ header h1 {
 .overview-txt-wrapper {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 50%;
 }
+
 /***** room *****/
 .room .content-wrapper {
   padding: 0;

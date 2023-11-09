@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/***** common *****/
 body {
   word-break: keep-all;
   line-height: 1.6;
@@ -52,10 +54,68 @@ a.book:hover {
   background-color: var(--point-color-lightGreen);
   color: var(--main-color);
 }
+.swiper {
+  width: 100%;
+  padding-bottom: 80px;
+}
+.mini-gallery {
+  padding-bottom: 0;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-gallery .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mini-gallery .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: calc(100vw - 32px);
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-next, 
+.swiper-button-prev {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 40px;
+  height: 40px;
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+  color: black;
+  font-size: var(--header-font);
+}
+.swiper-pagination {
+  --swiper-pagination-bottom: 25px;
+}
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-width: 40px;
+  --swiper-pagination-bullet-height: 23px;
+  border-bottom: 10px solid white;
+  border-top: 10px solid white;
+  border-radius: 0;
+}
+.swiper-pagination-bullet-active {
+  --swiper-pagination-color: #000;
+}
+
 /***** header *****/
-/* header {
-  height: 210px;
-} */
 header h1 {
   width: 100%;
   height: 100%;
@@ -101,6 +161,9 @@ header h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+}
+.work-lounge .zone-wrapper h4 {
+  font-size: var(--main-font-18);
 }
 .amenity .amenity-slide,
 .work-lounge .amenity-slide {
@@ -194,6 +257,7 @@ header h1 {
   font-size: var(--main-font-16);
   font-weight: 700;
 }
+
 /***** section-neighbor *****/
 .neighbor {
   border-top: 1px solid black;
@@ -220,6 +284,9 @@ header h1 {
 }
 .neighbor .neighbor-txt a {
   border-bottom: 1px solid black;
+}
+.point .neighbor-txt a {
+  border-color: white;
 }
 
 /***** section-FAQ *****/

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>loc-Goseong</title>
+  <title>고성-맹그로브mangrove</title>
   <!-- og -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="맹그로브 mangrove &#8211; Live &amp; Grow">
@@ -28,11 +28,15 @@
   <!-- footer -->
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/footer-pc.css" media="(width >= 1200px)">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- style -->
   <link rel="stylesheet" href="../css/loc-common.css">
   <link rel="stylesheet" href="../css/loc-Goseong.css">
   <link rel="stylesheet" href="../css/loc-common-pc.css" media="(width >= 1200px)">
   <link rel="stylesheet" href="../css/loc-Goseong-pc.css" media="(width >= 1200px)">
+  <!-- Swiper JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- script -->
   <script defer src="../js/header.js"></script>
   <script defer src="../js/loc-common.js"></script>
@@ -87,7 +91,7 @@
           <li><a href="../index.html">home</a></li>
           <li><a href="../about.html">about us</a></li>
           <li>
-            <a href="../location/loc-Dongdaemun.html" class="locations-btn">locations</a>
+            <a href="#" class="locations-btn">locations</a>
             <ul>
               <li><a href="../location/loc-Goseong.html">고성</a></li>
               <li><a href="../location/loc-Sinchon.html">신촌</a></li>
@@ -145,13 +149,22 @@
     </div>
     <div class="content-wrapper">
       <div class="amenity-slide">
-        <img src="../images/location/고성/230330-Mangrove-Goseong_12-2048x1365.jpg" alt="">
-        <!-- <img src="../images/location/고성/230330-Mangrove-Goseong_5-2048x1365.jpg" alt="">
-          <img src="../images/location/고성/230330-Mangrove-Goseong_3-2048x1365.jpg" alt="">
-          <img src="../images/location/고성/230330-Mangrove-Goseong_2-2048x1365.jpg" alt="">
-          <img src="../images/location/고성/230330-Mangrove-Goseong_16-2048x1365.jpg\" alt="">
-          <img src="../images/location/고성/230330-Mangrove-Goseong_15-2048x1365.jpg" alt="">
-          <img src="../images/location/고성/230330-Mangrove-Goseong_13-2048x1365.jpg" alt=""> -->
+        <div class="swiper swiper-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_12-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_5-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_3-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_2-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_16-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_15-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_13-2048x1365.jpg" alt=""></div>
+           <!--  <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div> -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
         <div class="zone-wrapper">
           <h4>Deep Focus Zone</h4>
           <ul class="des">
@@ -193,11 +206,17 @@
       <div class="room-item-wrapper">
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/고성/230330-Mangrove-Goseong_29-2048x1365.jpg" alt="">
-            <!-- <img src="../images/location/고성/2-2.jpg" alt="">
-            <img src="../images/location/고성/230330-Mangrove-Goseong_30-2048x1365.jpg" alt="">
-            <img src="../images/location/고성/230330-Mangrove-Goseong_31-2048x1365.jpg" alt="">
-            <img src="../images/location/고성/DOUBLE-2048x1152-1.png" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_29-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/2-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_30-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/location/고성/230330-Mangrove-Goseong_31-2048x1365.jpg"></div>
+                <div class="swiper-slide"> <img src="../images/location/고성/DOUBLE-2048x1152-1.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Stay Double</h4>
           <ul class="des">
@@ -210,11 +229,17 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/고성/230330-Mangrove-Goseong_32-2048x1365.jpg" alt="">
-            <!-- <img src="../images/location/고성/1-1.jpg" alt="">
-              <img src="../images/location/고성/230330-Mangrove-Goseong_33-2048x1365.jpg" alt="">
-              <img src="../images/location/고성/230330-Mangrove-Goseong_34-2048x1365.jpg" alt="">
-              <img src="../images/location/고성/TWIN-2048x1152-1.png" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_32-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/1-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_33-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_34-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/TWIN-2048x1152-1.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Stay Twin</h4>
           <ul class="des">
@@ -227,11 +252,17 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/고성/230330-Mangrove-Goseong_35-2048x1365.jpg" alt="">
-            <!-- <img src="../images/location/고성/1-1.jpg" alt="">
-              <img src="../images/location/고성/230330-Mangrove-Goseong_37-2048x1365.jpg" alt="">
-              <img src="../images/location/고성/230330-Mangrove-Goseong_38-2048x1365.jpg" alt="">
-              <img src="../images/location/고성/SUITE-2048x1152-1.png" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_35-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/1-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_38-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/location/고성/230330-Mangrove-Goseong_38-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/location/고성/SUITE-2048x1152-1.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Stay Double Suite</h4>
           <ul class="des">
@@ -244,11 +275,17 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/고성/230330-Mangrove-Goseong_40-2048x1365.jpg" alt="">
-            <!-- <img src="../images/location/고성/3-3.jpg" alt="">
-              <img src="../images/location/고성/230330-Mangrove-Goseong_43-2048x1365.jpg" alt="">
-              <img src="../images/location/고성/230330-Mangrove-Goseong_42-2048x1365.jpg" alt="">
-              <img src="../images/location/고성/DORMITORY-2048x1152-1.png" alt="">-->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_40-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/3-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_43-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/location/고성/230330-Mangrove-Goseong_42-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/고성/DORMITORY-2048x1152-1.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Stay Dormitory</h4>
           <ul class="des">
@@ -272,14 +309,21 @@
       <h5>공용 공간과 서비스</h5>
     </div>
     <div class="content-wrapper">
-      <img src="../images/location/고성/230330-Mangrove-Goseong_19-2048x1365.jpg" alt="">
-      <!-- <img src="../images/location/고성/230330-Mangrove-Goseong_20-2048x1365.jpg" alt="">
-        <img src="../images/location/고성/230330-Mangrove-Goseong_21-2048x1365.jpg" alt="">
-        <img src="../images/location/고성/230330-Mangrove-Goseong_22-2048x1367.jpg" alt="">
-        <img src="../images/location/고성/230330-Mangrove-Goseong_28-2048x1365.jpg" alt="">
-        <img src="../images/location/고성/230330-Mangrove-Goseong_23-2048x1365.jpg" alt="">
-        <img src="../images/location/고성/230330-Mangrove-Goseong_25-2048x1365.jpg" alt="">
-        <img src="../images/location/고성/230330-Mangrove-Goseong_48-2048x1365.jpg" alt=""> -->
+      <div class="swiper swiper-gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_19-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_20-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_21-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"> <img src="../images/location/고성/230330-Mangrove-Goseong_22-2048x1367.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_28-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"> <img src="../images/location/고성/230330-Mangrove-Goseong_23-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_25-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/고성/230330-Mangrove-Goseong_48-2048x1365.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="amenity">
         <h4>Amenity</h4>
         <ul class="des">

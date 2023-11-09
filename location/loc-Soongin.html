@@ -4,9 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>loc-Soongin</title>
+  <title>숭인-맹그로브mangrove</title>
   <!-- og -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="맹그로브 mangrove &#8211; Live &amp; Grow">
+  <meta property="og:description" content="맹그로브는 다양한 사람들이 조화를 이루며 건강하고 유쾌하게 살아가는 코리빙 하우스입니다." />
+  <meta property="og:url" content="https://mangrove.city/" />
+  <meta property="og:image" content="https://mangrove.city" />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
   <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/cropped-favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/cropped-favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/cropped-favicon-32x32.webp">
   <!-- reset -->
   <link rel="stylesheet" href="../style/minireset.min.css">
   <!-- common -->
@@ -17,9 +28,13 @@
   <!-- footer -->
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/footer-pc.css" media="(width >= 1200px)">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- style -->
   <link rel="stylesheet" href="../css/loc-common.css">
   <link rel="stylesheet" href="../css/loc-common-pc.css" media="(width >= 1200px)">
+  <!-- Swiper JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- script -->
   <script defer src="../js/header.js"></script>
   <script defer src="../js/loc-common.js"></script>
@@ -74,7 +89,7 @@
           <li><a href="../index.html">home</a></li>
           <li><a href="../about.html">about us</a></li>
           <li>
-            <a href="../location/loc-Dongdaemun.html" class="locations-btn">locations</a>
+            <a href="#" class="locations-btn">locations</a>
             <ul>
               <li><a href="../location/loc-Goseong.html">고성</a></li>
               <li><a href="../location/loc-Sinchon.html">신촌</a></li>
@@ -96,15 +111,21 @@
   <!----- section-intro ----->
   <section class="intro">
     <div class="intro-slide">
-      <div class="intro-left-slide"></div>
-      <div class="intro-right-slide"></div>
-      <img src="../images/location/숭인/Studio_2-2048x1365.jpg" alt="">
-      <!-- <img src="../images/location/숭인/20210422_085914-2048x1363.jpg" alt="">
-      <img src="../images/location/숭인/MORE3438_502-2048x1365.jpg" alt="">
-      <img src="../images/location/숭인/MORE3597-2048x1365.jpg" alt="">
-      <img src="../images/location/숭인/4K4A2366-2048x1365.jpg" alt="">
-      <img src="../images/location/숭인/20210422_085924-2048x1152.jpg" alt="">
-      <img src="../images/location/숭인/2020100336-2048x1399.jpg" alt=""> -->
+      <div class="swiper swiper-gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../images/location/숭인/Studio_2-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/숭인/20210422_085914-2048x1363.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/숭인/MORE3438_502-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/숭인/MORE3597-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/숭인/4K4A2366-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/숭인/20210422_085924-2048x1152.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/숭인/2020100336-2048x1399.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     </div>
     <p>맹그로브 숭인은 서울 중심부의 정감 있는 동네에 스물네 명의 이웃들이 모여 사는 코리빙 하우스입니다. 세심하게 구성된 개인 공간과 넉넉한 공용 공간이 멤버들의 충분한 휴식을 돕고, 이웃들간의 친밀한
       분위기를 형성합니다.</p>
@@ -131,13 +152,20 @@
     </div>
     <div class="content-wrapper">
       <div class="Amenity-slide">
-        <img src="../images/location/숭인/4K4A2268-2048x1365.jpg" alt="">
-        <!-- <img src="../images/location/숭인/1F_Lounge_2-2048x1365.jpg" alt="">
-          <img src="../images/location/숭인/Kitchen_1-2048x1365.jpg" alt="">
-          <img src="../images/location/숭인/4K4A2527-2048x1365.jpg" alt="">
-          <img src="../images/location/숭인/20210422_095434-2048x1365.jpg" alt="">
-          <img src="../images/location/숭인/4K4A1987-scaled-e1620394595806-2048x1323.jpg" alt="">
-          <img src="../images/location/숭인/4K4A2007-2048x1365.jpg" alt=""> -->
+        <div class="swiper swiper-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/location/숭인/4K4A2268-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/숭인/1F_Lounge_2-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/숭인/Kitchen_1-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/location/숭인/4K4A2527-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/location/숭인/20210422_095434-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/숭인/4K4A1987-scaled-e1620394595806-2048x1323.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/숭인/4K4A2007-2048x1365.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
       <ul class="des">
         <li><strong>Co-Working Lounge</strong>자유로운 업무와 스터디가 가능한 24시간 코워킹 공간</li>
@@ -172,10 +200,16 @@
       <div class="room-item-wrapper">
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/숭인/Compact_3-2048x1366.jpg" alt="">
-            <!-- <img src="../images/location/숭인/Compact_1-1365x2048.jpg" alt="">
-              <img src="../images/location/숭인/Compact_2-1365x2048.jpg" alt="">
-              <img src="../images/location/숭인/20210427_081051-2048x1340.png" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="../images/location/숭인/Compact_3-2048x1366.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/Compact_1-1365x2048.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/Compact_2-1365x2048.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/20210427_081051-2048x1340.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Single Compact</h4>
           <ul class="des">
@@ -186,10 +220,16 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/숭인/Studio_2-2048x1365.jpg" alt="">
-            <!-- <img src="../images/location/숭인/mg_0197_R1-2048x1365.jpg" alt="">
-              <img src="../images/location/숭인/mg_0026_R1-1365x2048.jpg" alt="">
-              <img src="../images/location/숭인/20210427_081118-2048x1340.png" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/숭인/Studio_2-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/mg_0197_R1-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/mg_0026_R1-1365x2048.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/20210427_081118-2048x1340.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Single Standard</h4>
           <ul class="des">
@@ -200,10 +240,16 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/숭인/20210422_100529-2048x1365.jpg" alt="">
-            <!-- <img src="../images/location/숭인/double_Studio_2-2-2048x1365.jpg" alt="">
-              <img src="../images/location/숭인/mg_0014_R1-1365x2048.jpg" alt="">
-              <img src="../images/location/숭인/20210427_081051-2048x1340.png" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/숭인/20210422_100529-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/double_Studio_2-2-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/mg_0014_R1-1365x2048.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/숭인/20210427_081051-2048x1340.png" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Duo</h4>
           <ul class="des">

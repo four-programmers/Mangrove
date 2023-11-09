@@ -4,9 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>loc-Sinchon</title>
+  <title>신촌-맹그로브mangrove</title>
   <!-- og -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="맹그로브 mangrove &#8211; Live &amp; Grow">
+  <meta property="og:description" content="맹그로브는 다양한 사람들이 조화를 이루며 건강하고 유쾌하게 살아가는 코리빙 하우스입니다." />
+  <meta property="og:url" content="https://mangrove.city/" />
+  <meta property="og:image" content="https://mangrove.city" />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
   <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/cropped-favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../images/favicon/cropped-favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/cropped-favicon-32x32.webp">
   <!-- reset -->
   <link rel="stylesheet" href="../style/minireset.min.css">
   <!-- common -->
@@ -17,9 +28,13 @@
   <!-- footer -->
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/footer-pc.css" media="(width >= 1200px)">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- style -->
   <link rel="stylesheet" href="../css/loc-common.css">
   <link rel="stylesheet" href="../css/loc-common-pc.css" media="(width >= 1200px)">
+  <!-- Swiper JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <!-- script -->
   <script defer src="../js/header.js"></script>
   <script defer src="../js/loc-common.js"></script>
@@ -74,7 +89,7 @@
           <li><a href="../index.html">home</a></li>
           <li><a href="../about.html">about us</a></li>
           <li>
-            <a href="../location/loc-Dongdaemun.html" class="locations-btn">locations</a>
+            <a href="#" class="locations-btn">locations</a>
             <ul>
               <li><a href="../location/loc-Goseong.html">고성</a></li>
               <li><a href="../location/loc-Sinchon.html">신촌</a></li>
@@ -96,14 +111,19 @@
   <!----- section-intro ----->
   <section class="intro">
     <div class="intro-slide">
-      <div class="intro-left-slide"></div>
-      <div class="intro-right-slide"></div>
-      <img src="../images/location/신촌/01-2048x1365.jpg" alt="">
-      <!-- <img src="../images/location/신촌/02-2048x1365.jpg" alt="">
-      <img src="../images/location/신촌/03-2048x1365.jpg" alt="">
-      <img src="../images/location/신촌/04-2048x1365.jpg" alt="">
-      <img src="../images/location/신촌/05-2048x1365.jpg" alt="">
-      <img src="../images/location/신촌/06-2048x1365.jpg" alt=""> -->
+      <div class="swiper swiper-gallery">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="../images/location/신촌/01-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/신촌/02-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"> <img src="../images/location/신촌/03-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/신촌/04-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/신촌/05-2048x1365.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../images/location/신촌/06-2048x1365.jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
     <p>맹그로브 신촌은 활기 넘치는 도시 인프라와 뛰어난 교통의 이점을 함께 누릴 수 있는 코리빙 하우스입니다. 전 세대 주방이 포함된 개인 공간과 다양한 공용 공간을 비롯해 편리한 상업 시설을 갖추어
       만족스러운 코리빙 라이프를 경험할 수 있습니다.</p>
@@ -132,15 +152,22 @@
     </div>
     <div class="content-wrapper">
       <div class="Amenity-slide">
-        <img src="../images/location/신촌/01-1-2048x1365.jpg" alt="">
-        <!-- <img src="../images/location/신촌/02-1-2048x1365.jpg" alt="">
-        <img src="../images/location/신촌/03-1-2048x1365.jpg" alt="">
-        <img src="../images/location/신촌/04-1-2048x1365.jpg" alt="">
-        <img src="../images/location/신촌/05-1-2048x1365.jpg" alt="">
-        <img src="../images/location/신촌/06-1-2048x1365.jpg" alt="">
-        <img src="../images/location/신촌/07-2048x1365.jpg" alt="">
-        <img src="../images/location/신촌/08-2048x1365.jpg" alt="">
-        <img src="../images/location/신촌/09-2048x1365.jpg" alt=""> -->
+        <div class="swiper swiper-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/location/신촌/01-1-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/신촌/02-1-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/신촌/03-1-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"> <img src="../images/location/신촌/04-1-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/신촌/05-1-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/신촌/06-1-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/신촌/07-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/신촌/08-2048x1365.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="../images/location/신촌/09-2048x1365.jpg" alt=""></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
       <ul class="des">
         <li><strong>Work Station</strong>자유로운 업무와 스터디가 가능한 코워킹 공간</li>
@@ -176,10 +203,16 @@
       <div class="room-item-wrapper">
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/신촌/01-2-2048x1365.jpg" alt="">
-            <!--  <img src="../images/location/신촌/02-2-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/03-2-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/14B-2048x1152.webp" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/신촌/01-2-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/02-2-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/03-2-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/14B-2048x1152.webp" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Single Cozy</h4>
           <ul class="des">
@@ -190,10 +223,16 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/신촌/01-3-2048x1365.jpg" alt="">
-            <!-- <img src="../images/location/신촌/02-3-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/03-3-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/14C-2048x1152.webp" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/신촌/01-3-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/02-3-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/03-3-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/14C-2048x1152.webp" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Single Standard</h4>
           <ul class="des">
@@ -204,10 +243,16 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/신촌/01-4-2048x1365.jpg" alt="">
-            <!--  <img src="../images/location/신촌/02-4-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/03-4-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/14A-2048x1152.webp" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/신촌/01-4-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/02-4-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/03-4-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/14A-2048x1152.webp" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Single Deluxe</h4>
           <ul class="des">
@@ -218,10 +263,16 @@
         </div>
         <div class="room-item">
           <div class="room-slide">
-            <img src="../images/location/신촌/01-5-2048x1365.jpg" alt="">
-            <!--   <img src="../images/location/신촌/02-5-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/03-5-2048x1365.jpg" alt="">
-              <img src="../images/location/신촌/30A-2048x1152.webp" alt=""> -->
+            <div class="swiper mini-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/location/신촌/01-5-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/02-5-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"> <img src="../images/location/신촌/03-5-2048x1365.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="../images/location/신촌/30A-2048x1152.webp" alt=""></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
           </div>
           <h4>Trio</h4>
           <ul class="des">
