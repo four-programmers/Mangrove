@@ -9,6 +9,7 @@
 }
 .more-btn span {
   font-size: 1.5rem;
+  font-weight: 600;
   margin-left: 0.3em;
   width: 25px;
   position: absolute;
@@ -93,20 +94,23 @@
 /* locations */
 .locations {
   border-bottom: 1px solid #000;
-  overflow: hidden;
+  padding-bottom: 32px;
+  /* overflow: hidden; */
 }
 .locations .locations-title {
-  padding: 32px 16px 32px;
+  padding: 32px 16px 0;
 }
 .locations .locations-title .swiper-pagination {
+  position: static;
   margin-bottom: 40px;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
 }
 .locations .locations-title .swiper-pagination .swiper-pagination-bullet {
-  width: fit-content;
-  height: fit-content;
+  width: unset;
+  min-width: fit-content;
+  height: unset;
   color: var(--main-color);
   text-align: center;
   font-weight: 600;
@@ -114,20 +118,21 @@
   border: 1px solid #000;
   padding: 6px 12px 5px;
   cursor: pointer;
+  position: relative;
 }
-.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(1)::before {
+.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(1):before {
   content: "Goseong";
 }
-.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(2)::before {
+.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(2):before {
   content: "Sinchon";
 }
-.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(3)::before {
+.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(3):before {
   content: "Dongdaemun";
 }
-.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(4)::before {
+.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(4):before {
   content: "Sinseol";
 }
-.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(5)::before {
+.locations .locations-title .swiper-pagination .swiper-pagination-bullet:nth-child(5):before {
   content: "Soongin";
 }
 
@@ -138,6 +143,9 @@
 }
 
 /* locations-slide */
+.locations .main-slide {
+  overflow: hidden;
+}
 .locations .main-slide .swiper-wrapper {
   width: 100%;
   height: 74.7201vh;
@@ -149,50 +157,31 @@
   width: 100%;
   height: 100%;
   border-right: 1px solid #000;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
   position: relative;
 }
 .locations .main-slide .swiper-wrapper .swiper-slide .slide-link {
   display: block;
-  width: 80%;
-  height: 100%;
-}
-.locations .main-slide .swiper-wrapper .swiper-slide .slide-link span {
-  text-indent: -9999px;
   width: 100%;
   height: 60%;
-  margin-bottom: 35px;
-  display: block;
+}
+.locations .main-slide .swiper-wrapper .swiper-slide .slide-link span {
+  height: 100%;
   transition: 0.2s;
+  display: flex;
+  justify-content: center;
 }
-.locations .main-slide .swiper-wrapper .tab-goseong .slide-link span {
-  background: url(../images/index/tab-goseong.png) no-repeat 50% / cover;
-  background-size: 74.508vw 90%;
-}
-.locations .main-slide .swiper-wrapper .tab-sinchon .slide-link span {
-  background: url(../images/index/tab-sinchon.png) no-repeat 50% / cover;
-  background-size: 74.508vw  90%;
-}
-.locations .main-slide .swiper-wrapper .tab-dongdaemun .slide-link span {
-  background: url(../images/index/tab-dongdaemun.png) no-repeat 50% / cover;
-  background-size: 74.508vw  90%;
-}
-.locations .main-slide .swiper-wrapper .tab-sinseol .slide-link span {
-  background: url(../images/index/tab-sinseol.png) no-repeat 50% / cover;
-  background-size: 74.508vw  90%;
-}
-.locations .main-slide .swiper-wrapper .tab-soongin .slide-link span {
-  background: url(../images/index/tab-soongin.png) no-repeat 50% / cover;
-  background-size: 74.508vw  90%;
+.locations .main-slide .swiper-wrapper .swiper-slide .slide-link span img {
+  height: 100%;
+  transition: 0.2s;
 }
 .locations .main-slide .swiper-wrapper .swiper-slide .tab-txt {
   text-align: center;
   width: 65%;
-  position: absolute;
-  bottom: 0;
+  margin-top: 35px;
 }
 .locations .main-slide .swiper-wrapper .swiper-slide .tab-txt h3 {
   padding-bottom: 10px;
@@ -293,13 +282,13 @@
 .journal .sub-slide .swiper-wrapper {
   width: 100%;
   height: 100%;
-  padding: 20px 16px 16px 16px;
+  padding: 16px 16px 0;
   display: flex;
 }
 .journal .sub-slide .swiper-wrapper .swiper-slide {
-  width: 50%;
+  width: 56%;
+  height: 100%;
   margin-right: 20px;
-  min-width: 205px;
   word-break: keep-all;
   flex-shrink: 0;
 }

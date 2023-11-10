@@ -117,11 +117,12 @@
     width: 100%;
     overflow: hidden;
   }
-  .locations .main-slide .swiper-wrapper .swiper-slide span {
-    background-size: 18.143vw 90%;
+  .locations .main-slide .swiper-wrapper:hover {
+    cursor: url(../images/swipe-cursor.svg) 12 12, auto;
   }
-  .locations .main-slide .swiper-wrapper .swiper-slide span:hover {
-    background-size: 20vw 100%;
+  .locations .main-slide .swiper-wrapper .swiper-slide .slide-link span img:hover {
+    transform: scale(1.1);
+    cursor: url(../images/swipe-cursor.svg) 12 12, auto;
   }
   
   /* community */
@@ -227,7 +228,6 @@
   .journal .sub-slide .swiper-wrapper .swiper-slide {
     width: 20%;
     height: 100%;
-    flex-shrink: 0;
   }
   .journal .sub-slide .swiper-wrapper .swiper-slide a {
     cursor: url(../images/swipe-cursor.svg) 12 12, auto;
