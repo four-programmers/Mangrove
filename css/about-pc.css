@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-@media (width >= 1200px) {
   /*** about-title ***/
   .about-title {
     font-size: var(--title-font-lage);
@@ -119,6 +118,9 @@
     height: 168.4px;
     border: 0.8px solid #000;
   }
+  .benefit .benefit-wrapper ul > li:nth-child(2) {
+    width: calc(100% - 190px);
+  }
   .benefit .benefit-wrapper ul h3 {
     padding: 20px 0 7px;
   }
@@ -181,4 +183,3 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
-}

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-@media (width >=1200px) {
   header {
     display: flex;
     flex-direction: column-reverse;
@@ -162,4 +161,3 @@
       color: white;
     }
   }
-}
