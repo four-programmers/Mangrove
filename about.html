@@ -23,6 +23,7 @@
   <!-- script -->
   <script defer src="./js/header.js"></script>
   <script defer src="./js/about.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -74,23 +75,23 @@
           <li><a href="#">home</a></li>
           <li><a href="#">about us</a></li>
           <li>
-            <a href="#" class="locations-btn">locations</a>
+            <a href="./location/loc-Dongdaemun.html" class="locations-btn">locations</a>
             <ul>
-              <li><a href="#">고성</a></li>
-              <li><a href="#">신촌</a></li>
-              <li><a href="#">동대문</a></li>
-              <li><a href="#">신설</a></li>
-              <li><a href="#">숭인</a></li>
+              <li><a href="./location/loc-Goseong.html">고성</a></li>
+              <li><a href="./location/loc-Sinchon.html">신촌</a></li>
+              <li><a href="./location/loc-Dongdaemun.html">동대문</a></li>
+              <li><a href="./location/loc-Sinseol.html">신설</a></li>
+              <li><a href="./location/loc-Soongin.html">숭인</a></li>
             </ul>
           </li>
           <li><a href="#">community</a></li>
-          <li><a href="#">journal</a></li>
+          <li><a href="./journal.html">journal</a></li>
         </menu>
         <div class="lang"><a href="#">ENG</a></div>
       </div>
       <div class="lang-pc"><a href="#">ENG</a></div>
     </div>
-    <h1><img src="./images/index/logo-main.svg" alt="메인로고"></h1>
+    <h1><a href="./index.html"><img src="./images/index/logo-main.svg" alt="메인로고"></a></h1>
   </header>
 
   <!----- contents ----->
@@ -109,14 +110,24 @@
   <!-- Live -->
   <section class="live">
     <ul class="live-wrapper">
-      <li class="box box1">라이브 비거 이미지</li>
+      <li class="box box1">라이브 비거 이미지
+        <div class="box1-style1"></div>
+        <div class="box1-style2"></div>
+        <div class="box1-style3"></div>
+        <div class="box1-style4"></div>
+      </li>
       <li class="box box2">
         <h2 class="about-title">Live Bigger</h2>
         <strong>더 넓고 쾌적한 주거</strong>
         <p class="about-des">혼자 살 때 가지기 어려운 다채로운 공간들을 마음껏 누릴 수 있다는 것이 코리빙 하우스의 가장 큰 장점입니다. 프라이버시를 보장하는 개인 공간은 물론, 집 안에서
           편하게 활용할 수 있는 공용 공간을 통해 일상의 경험이 풍요로워집니다.</p>
       </li>
-      <li class="box box3">라이브 인 웰니스 이미지</li>
+      <li class="box box3">라이브 인 웰니스 이미지
+        <div class="box3-style1"></div>
+        <div class="box3-style2"></div>
+        <div class="box3-style3"></div>
+        <div class="box3-style4"></div>
+      </li>
       <li class="box box4">
         <h2 class="about-title">Live in Wellness</h2>
         <strong>건강한 삶을 위한 커뮤니티</strong>
@@ -185,26 +196,27 @@
   <!-- locations -->
   <section class="about-locations">
     <h4>각각의 특색을 갖춘 맹그로브의 지점들을 살펴보세요.</h4>
-    <div class="main-slide">
+    <div class="about-slide">
       <ul class="about-locations-list swiper-wrapper">
         <li class="swiper-slide">
-          <a href="#"><img src="./images/aboutUs/about-logo-goseong.svg" alt="맹그로브 고성 로고"></a>
+          <a href="./location/loc-Goseong.html"><img src="./images/aboutUs/about-logo-goseong.svg" alt="맹그로브 고성 로고"></a>
           <p>맹그로브 고성</p>
         </li>
         <li class="swiper-slide">
-          <a href="#"><img src="./images/aboutUs/about-logo-sinchon.svg" alt="맹그로브 신촌 로고"></a>
+          <a href="./location/loc-Sinchon.html"><img src="./images/aboutUs/about-logo-sinchon.svg" alt="맹그로브 신촌 로고"></a>
           <p>맹그로브 신촌</p>
         </li>
         <li class="swiper-slide">
-          <a href="#"><img src="./images/aboutUs/about-logo-soongin.svg" alt="맹그로브 숭인 로고"></a>
+          <a href="./location/loc-Soongin.html"><img src="./images/aboutUs/about-logo-soongin.svg" alt="맹그로브 숭인 로고"></a>
           <p>맹그로브 숭인</p>
         </li>
         <li class="swiper-slide">
-          <a href="#"><img src="./images/aboutUs/about-logo-dongdaemun.svg" alt="맹그로브 동대문 로고"></a>
+          <a href="./location/loc-Dongdaemun.html"><img src="./images/aboutUs/about-logo-dongdaemun.svg"
+              alt="맹그로브 동대문 로고"></a>
           <p>맹그로브 동대문</p>
         </li>
         <li class="swiper-slide">
-          <a href="#"><img src="./images/aboutUs/about-logo-sinseol.svg" alt="맹그로브 신설 로고"></a>
+          <a href="./location/loc-Sinseol.html"><img src="./images/aboutUs/about-logo-sinseol.svg" alt="맹그로브 신설 로고"></a>
           <p>맹그로브 신설</p>
         </li>
       </ul>

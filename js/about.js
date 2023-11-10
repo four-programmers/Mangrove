@@ -1,4 +1,4 @@
-const mainSlide = new Swiper('#main-slide', {
+const aboutSlide = new Swiper('.about-slide', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -7,5 +7,10 @@ const mainSlide = new Swiper('#main-slide', {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+    },
   },
 });

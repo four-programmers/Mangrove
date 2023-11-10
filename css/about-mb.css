@@ -54,16 +54,114 @@
   border-top: 1px solid #000;
 }
 .live .live-wrapper .box1 {
-  background-color: var(--point-color-lightGreen);
+  background-color: var(--bg-color-mint);
   border-top: 1px solid #000;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.live .live-wrapper .box1 .box1-style1 {
+  border-radius: 50%;
+  background: var(--point-color-lightGreen);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.802853);
+  animation: boxStyle 5s infinite ease-in-out backwards;
+}
+.live .live-wrapper .box1 .box1-style2 {
+  border-radius: 50%;
+  background: var(--bg-color-mint);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.802853);
+  animation: boxStyle 8s infinite ease-in-out backwards;
+}
+.live .live-wrapper .box1 .box1-style3 {
+  border-radius: 50%;
+  background: var(--point-color-lightGreen);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.802853);
+  animation: boxStyle2 10s infinite ease-in-out backwards;
+}
+.live .live-wrapper .box1 .box1-style4 {
+  border-radius: 50%;
+  background: var(--bg-color-mint);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.802853);
+  animation: boxStyle2 12s infinite ease-in-out backwards alternate;
 }
 .live .live-wrapper .box3 {
   background-color: #E5F0F2;
   border-top: 1px solid #000;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.live .live-wrapper .box3 .box3-style1 {
+  background: var(--bg-color-blue);
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  left: 30%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  animation: boxStyle3 5s infinite ease-in-out forwards alternate;
+}
+.live .live-wrapper .box3 .box3-style2 {
+  background: var(--bg-color-blue);
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  left: 70%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  animation: boxStyle3 5s infinite ease-in-out forwards alternate;
+}
+.live .live-wrapper .box3 .box3-style3 {
+  background: var(--bg-color-blue);
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  left: 30%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  animation: boxStyle3 5s infinite ease-in-out forwards alternate;
+}
+.live .live-wrapper .box3 .box3-style4 {
+  background: var(--bg-color-blue);
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  left: 70%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  animation: boxStyle3 5s infinite ease-in-out forwards alternate;
 }
 .live .live-wrapper .box5 {
-  background-color: var(--point-color-lightGreen);
+  background-color: var(--bg-color-mint);
   border-top: 1px solid #000;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .live .live-wrapper .box:last-child {
   border-bottom: 1px solid #000;
@@ -153,4 +251,31 @@
 }
 .about-locations .about-locations-list li a img {
   height: 40px;
+}
+
+@keyframes boxStyle {
+  0% {
+    width: 100px; height: 100px;
+  } 100% {
+    width: 10000px;
+    height: 10000px;
+  }
+}
+@keyframes boxStyle2 {
+  0% {
+    width: 50px; height: 50px;
+  } 100% {
+    width: 10000px;
+    height: 10000px;
+  }
+}
+@keyframes boxStyle3 {
+  0% {
+    
+  } 100% {
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    height: 90%;
+  }
 }

@@ -133,33 +133,52 @@
     font-size: var(--main-font-16);
     margin-bottom: 0;
   }
-  .about-locations .about-locations-list {
-    display: flex;
+  .about-locations .about-slide {
+    width: 100%;
     overflow: hidden;
+  }
+  .about-locations .about-slide .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
     position: relative;
   }
-  .about-locations .about-locations-list li {
-    width: 49%;
-    margin-right: 20px;
-    flex-shrink: 0;
+  .about-locations .about-slide .swiper-wrapper .swiper-slide {
+    /* margin-right: 20px; */
   }
-  .about-locations .about-locations-list li a {
+  .about-locations .about-slide .swiper-wrapper .swiper-slide a {
     padding: 30px 20px 60px;
+    width: 100%;
     cursor: url(../images/swipe-cursor.svg) 12 12, auto;
   }
-  .about-locations .about-locations-list li a:hover {
+  .about-locations .about-slide .swiper-wrapper .swiper-slide a:hover {
     background-color: var(--bg-color-mint);
   }
-  .about-locations .about-locations-list li a img {
+  .about-locations .about-slide .swiper-wrapper .swiper-slide a img {
     height: 60px;
   }
-  .about-locations .main-slide .swiper-wrapper .swiper-button-next::before {
-    content: "\35";
+  .about-locations .about-slide .swiper-button-next::after {
+    content: "<";
     color: inherit;
     width: 30px;
     height: 30px;
+    font-size: 56px;
     position: absolute;
-    top: 0;
+    top: 45%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .about-locations .about-slide .swiper-button-next::before {
+    content: ">";
+    color: inherit;
+    width: 30px;
+    height: 30px;
+    font-size: 56px;
+    position: absolute;
+    top: 45%;
     right: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
   }
 }
