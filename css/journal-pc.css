@@ -1,149 +1,147 @@
 @charset "utf-8";
 
-@media (width >= 1200px) {
-  .journal-menu {
-    padding-top: 270px;
-  }
-  .post img {
-    display: none;
-  }
-  .journal-menu-wrapper .search-wrapper {
-    width: 300px;
-  }
-  .journal-menu-wrapper .journal-menu li {
-    padding: 10px 15px 8px;
-  }
-  .post {
-    padding: 35px 40px 25px 26.625vw;
+.journal-menu {
+  padding-top: 270px;
+}
+.post img {
+  display: none;
+}
+.journal-menu-wrapper .search-wrapper {
+  width: 300px;
+}
+.journal-menu-wrapper .journal-menu li {
+  padding: 10px 15px 8px;
+}
+.post {
+  padding: 35px 40px 25px 26.625vw;
 
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid var(--main-color);
-    position: relative;
-    overflow: visible;
-  }
-  .post:hover img {
-    display: block;
-    position: fixed;
-    width: 33%;
-    height: 50vh;
-    object-fit: cover;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
-    z-index: 100;
-  }
-  .post h3 {
-    font-size: var(--hd-font);
-    display: inline-block;
-    text-align: left;
-    width: 70%;
-  }
-  .post p {
-    display: inline-block;
-    width: 70%;
-    text-align: left;
-  }
-  .post1 {
-    margin-top: 60px;
-  }
-  .post7 {
-    margin-bottom: 120px;
-    border-bottom: 1px solid var(--main-color);
-  }
-  .post a {
-    width: 48px;
-    height: 48px;
-    background-color: transparent;
-    border: 2px solid var(--main-color);
-    position: absolute;
-    top: 45%;
-    left: auto;
-    right: 30px;
-    transform: translateY(-45%);
-  }
-  .post a span {
-    width: 38px;
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    font-size: 1.8rem;
-  }
-  .post-interview {
-    padding-top: 258px;
-    line-height: 1.5;
-  }
-  .post-interview .post-interview-title img {
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-  }
-  .post-interview .post-interview-title .title-container {
-    width: 700px;
-  }
-  .post-interview .post-interview-title .title-container h3 {
-    font-size: 1.25rem;
-  }
-  .post-interview .post-interview-title .title-container span {
-    font-size: var(--main-font-18);
-  }
-  .post-interview .post-interview-title .title-container .title-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 25px auto 0;
-  }
-  .post-interview p {
-    width: 700px;
-    margin: 40px auto;
-    font-size: var(--main-font-18);
-  }
-  .post-interview .post-interview-title .title-container p {
-    margin: 5px auto 15px;
-  }
-  .post-interview .post-interview-top strong,
-  .post-interview .post-interview-bottom strong {
-    width: 700px;
-    padding: 0 16px;
-    margin: 35px auto;
-    font-size: var(--main-font-18);
-  }
-  .post-interview .post-interview-bottom img {
-    width: 800px;
-    height: auto;
-    object-fit: cover;
-  }
-  .post-interview .back-btn {
-    display: block;
-    position: fixed;
-    left: 30px;
-    bottom: 50px;
-    font-size: var(--hd-font);
-    font-weight: 900;
-    font-family: var(--font-en);
-  }
-  .post-interview .post-interview-middle img {
-    width: 800px;
-    height: auto;
-    object-fit: cover;
-    margin: 40px auto;
-    display: flex;
-    justify-content: center;
-  }
-  .post-interview .post-interview-middle strong {
-    font-size: var(--main-font-18);
-    width: 700px;
-  }
-  .post-interview .post-interview-middle p strong {
-    font-size: 1.25rem;
-  }
-  .post-interview .post-interview-bottom p strong {
-    font-size: 1.25rem;
-    padding: 0;
-  }
-  .post-interview .post-interview-bottom7 strong {
-    text-align: center;
-  }
-  .post-interview .post-interview-bottom2 strong {
-    text-align: center;
-  }
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid var(--main-color);
+  position: relative;
+  overflow: visible;
+}
+.post:hover img {
+  display: block;
+  position: fixed;
+  width: 33%;
+  height: 50vh;
+  object-fit: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  z-index: 100;
+}
+.post h3 {
+  font-size: var(--hd-font);
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+}
+.post p {
+  display: inline-block;
+  width: 70%;
+  text-align: left;
+}
+.post1 {
+  margin-top: 60px;
+}
+.post7 {
+  margin-bottom: 120px;
+  border-bottom: 1px solid var(--main-color);
+}
+.post a {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid var(--main-color);
+  position: absolute;
+  top: 45%;
+  left: auto;
+  right: 30px;
+  transform: translateY(-45%);
+}
+.post a span {
+  width: 38px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+.post-interview {
+  padding-top: 258px;
+  line-height: 1.5;
+}
+.post-interview .post-interview-title img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+.post-interview .post-interview-title .title-container {
+  width: 700px;
+}
+.post-interview .post-interview-title .title-container h3 {
+  font-size: 1.25rem;
+}
+.post-interview .post-interview-title .title-container span {
+  font-size: var(--main-font-18);
+}
+.post-interview .post-interview-title .title-container .title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto 0;
+}
+.post-interview p {
+  width: 700px;
+  margin: 40px auto;
+  font-size: var(--main-font-18);
+}
+.post-interview .post-interview-title .title-container p {
+  margin: 5px auto 15px;
+}
+.post-interview .post-interview-top strong,
+.post-interview .post-interview-bottom strong {
+  width: 700px;
+  padding: 0 16px;
+  margin: 35px auto;
+  font-size: var(--main-font-18);
+}
+.post-interview .post-interview-bottom img {
+  width: 800px;
+  height: auto;
+  object-fit: cover;
+}
+.post-interview .back-btn {
+  display: block;
+  position: fixed;
+  left: 30px;
+  bottom: 50px;
+  font-size: var(--hd-font);
+  font-weight: 900;
+  font-family: var(--font-en);
+}
+.post-interview .post-interview-middle img {
+  width: 800px;
+  height: auto;
+  object-fit: cover;
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+}
+.post-interview .post-interview-middle strong {
+  font-size: var(--main-font-18);
+  width: 700px;
+}
+.post-interview .post-interview-middle p strong {
+  font-size: 1.25rem;
+}
+.post-interview .post-interview-bottom p strong {
+  font-size: 1.25rem;
+  padding: 0;
+}
+.post-interview .post-interview-bottom7 strong {
+  text-align: center;
+}
+.post-interview .post-interview-bottom2 strong {
+  text-align: center;
 }
