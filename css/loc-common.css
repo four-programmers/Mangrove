@@ -56,7 +56,7 @@ a.book:hover {
 }
 .swiper {
   width: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 70px;
 }
 .mini-gallery {
   padding-bottom: 0;
@@ -86,7 +86,7 @@ a.book:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.swiper-button-next, 
+.swiper-button-next,
 .swiper-button-prev {
   background-color: rgba(255, 255, 255, 0.5);
   width: 40px;
@@ -96,7 +96,7 @@ a.book:hover {
 .swiper-button-prev {
   left: 0;
 }
-.swiper-button-next:after, 
+.swiper-button-next:after,
 .swiper-button-prev:after {
   color: black;
   font-size: var(--header-font);
@@ -105,8 +105,8 @@ a.book:hover {
   --swiper-pagination-bottom: 25px;
 }
 .swiper-pagination-bullet {
-  --swiper-pagination-bullet-width: 40px;
-  --swiper-pagination-bullet-height: 23px;
+  --swiper-pagination-bullet-width: 21px;
+  --swiper-pagination-bullet-height: 22px;
   border-bottom: 10px solid white;
   border-top: 10px solid white;
   border-radius: 0;

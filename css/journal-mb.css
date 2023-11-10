@@ -1,6 +1,6 @@
 @charset "utf-8";
 .journal-menu {
-  padding-top: 130px;
+  padding-top: 25vw;
 }
 .post {
   cursor: pointer;
@@ -80,7 +80,7 @@
   transform: translate(-40%, -50%);
 }
 .post a span {
-  background: url(../images/journal/journal-icon-01.svg) no-repeat 50% /cover;
+  background: url(../images/journal/journal-icon-01.svg) no-repeat 50% / cover;
   width: 35px;
   height: 35px;
   line-height: 35px;

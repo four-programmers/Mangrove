@@ -53,10 +53,12 @@
   header .menu-wrapper .global-menu > li:first-child {
     display: none;
   }
+  header .menu-wrapper .global-menu > li {
+    min-width: 170px;
+  }
   header .menu-wrapper .global-menu > li > a {
     display: block;
     padding: 5px 12.5px 0;
-    min-width: 153px;
   }
   header .menu-wrapper .global-menu ul {
     display: none;
