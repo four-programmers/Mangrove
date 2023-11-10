@@ -72,7 +72,7 @@
   .locations {
     padding: 40px 0 40px 60px;
     display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 25% 75%;
   }
   .locations .locations-title {
     padding: 0;
@@ -129,7 +129,7 @@
   .community {
     padding: 0 0 0 60px;
     display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 25% 75%;
     position: relative;
     overflow: hidden;
   }
@@ -213,29 +213,22 @@
   .journal {
     padding: 40px 0 40px 60px;
     display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 25% 75%;
     position: relative;
   }
   .journal .sub-slide {
-    width: 100%;
     margin-top: 67px;
     overflow: hidden;
   }
   .journal .sub-slide .swiper-wrapper {
-    width: 50%;
     padding: 0 10px 0;
   }
   .journal .sub-slide .swiper-wrapper .swiper-slide {
-    width: 20%;
-    height: 100%;
+    width: 36%;
+    width: 36%;
   }
   .journal .sub-slide .swiper-wrapper .swiper-slide a {
     cursor: url(../images/swipe-cursor.svg) 12 12, auto;
-  }
-  .journal .sub-slide .swiper-wrapper .swiper-slide .post-img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
   }
   .journal .more-btn {
     height: 50.5px;
