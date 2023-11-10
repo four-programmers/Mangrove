@@ -22,10 +22,10 @@ header h1 {
 .swiper-gallery .swiper-button-prev {
   background-color: transparent;
 }
-.swiper-gallery .swiper-button-next:after, 
+.swiper-gallery .swiper-button-next:after,
 .swiper-gallery .swiper-button-prev:after {
   display: none;
-} 
+}
 .swiper-pagination-bullet {
   --swiper-pagination-bullet-width: 50px;
   --swiper-pagination-bullet-height: 23px;
@@ -33,7 +33,7 @@ header h1 {
 .big-btn:hover {
   transform: scale(1.08);
 }
-.swiper-gallery .swiper-button-prev{
+.swiper-gallery .swiper-button-prev {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -41,7 +41,7 @@ header h1 {
   left: 0;
   cursor: url(../images/location/고성/slider-arrow-big-prev.svg) 20 40, auto;
 }
-.swiper-gallery .swiper-button-next{
+.swiper-gallery .swiper-button-next {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -86,7 +86,7 @@ header h1 {
 }
 .overview img {
   max-height: 70vh;
-  width: auto;
+  width: 50%;
   padding: 0 10px;
 }
 .overview p {
