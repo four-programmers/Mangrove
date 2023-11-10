@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-@media (width >= 1200px) {
   /*** about-title ***/
   .about-title {
     font-size: var(--title-font-lage);
@@ -184,4 +183,3 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
-}

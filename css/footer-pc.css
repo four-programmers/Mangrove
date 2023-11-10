@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-@media (width >=1200px) {
   /* footer-top */
   footer .ft-top {
     font-size: var(--main-font-18);
@@ -61,4 +60,3 @@
   footer .ft-bottom .bottom-list4 li:nth-child(3) {
     padding-bottom: 14px;
   }
-}
