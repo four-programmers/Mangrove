@@ -92,6 +92,7 @@ a.book:hover {
   width: 40px;
   height: 40px;
   right: 0;
+  transform: translateY(-50%);
 }
 .swiper-button-prev {
   left: 0;
@@ -105,11 +106,13 @@ a.book:hover {
   --swiper-pagination-bottom: 25px;
 }
 .swiper-pagination-bullet {
-  --swiper-pagination-bullet-width: 21px;
+  --swiper-pagination-bullet-width: 6%;
+  max-width: 30px;
   --swiper-pagination-bullet-height: 22px;
   border-bottom: 10px solid white;
   border-top: 10px solid white;
   border-radius: 0;
+  --swiper-pagination-bullet-horizontal-gap:2px;
 }
 .swiper-pagination-bullet-active {
   --swiper-pagination-color: #000;
@@ -123,7 +126,7 @@ header h1 {
 
 /***** section-intro *****/
 .intro {
-  padding: 30vw 0 40px;
+  padding: 40vw 0 40px;
 }
 
 .intro .intro-slide {

@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/***** common *****/
 .membership a,
 .cor-programs a {
   display: block;

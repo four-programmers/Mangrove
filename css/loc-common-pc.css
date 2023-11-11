@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /***** common *****/
 h3 {
   font-size: var(--title-font-middle);
@@ -33,7 +35,8 @@ header h1 {
 .big-btn:hover {
   transform: scale(1.08);
 }
-.swiper-gallery .swiper-button-prev {
+.swiper-gallery .swiper-button-prev,
+.swiper-gallery .swiper-button-next {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -42,12 +45,10 @@ header h1 {
   cursor: url(../images/location/고성/slider-arrow-big-prev.svg) 20 40, auto;
 }
 .swiper-gallery .swiper-button-next {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  top: 0;
   right: 0;
-  cursor: url(../images/location/고성/slider-arrow-big-next.svg) 20 40, auto;
+}
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-horizontal-gap:4px;
 }
 .mini-gallery .swiper-slide img {
   height: calc(25vw - 40px);
