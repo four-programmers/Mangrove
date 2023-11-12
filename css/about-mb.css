@@ -107,6 +107,34 @@
   height: 100%;
   position: relative;
 }
+.live .live-wrapper .box3 .style-box1 {
+  width: 53%;
+  height: 53%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.live .live-wrapper .box3 .style-box2 {
+  width: 53%;
+  height: 53%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.live .live-wrapper .box3 .style-box3 {
+  width: 53%;
+  height: 53%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.live .live-wrapper .box3 .style-box4 {
+  width: 53%;
+  height: 53%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .live .live-wrapper .box3 .box3-style1 {
   background: var(--bg-color-blue);
   position: absolute;
@@ -117,7 +145,7 @@
   top: 30%;
   transform: translate(-50%, -50%);
   transition: 0.3s;
-  animation: boxStyle3 2.5s infinite ease-in-out forwards alternate;
+  animation: boxStyle3 3s infinite ease-in-out forwards alternate;
 }
 .live .live-wrapper .box3 .box3-style2 {
   background: var(--bg-color-blue);
@@ -129,7 +157,7 @@
   top: 30%;
   transform: translate(-50%, -50%);
   transition: 0.3s;
-  animation: boxStyle3 2.5s infinite ease-in-out forwards alternate;
+  animation: boxStyle3 3s infinite ease-in-out forwards alternate;
 }
 .live .live-wrapper .box3 .box3-style3 {
   background: var(--bg-color-blue);
@@ -141,7 +169,7 @@
   top: 70%;
   transform: translate(-50%, -50%);
   transition: 0.3s;
-  animation: boxStyle3 2.5s infinite ease-in-out forwards alternate;
+  animation: boxStyle3 3s infinite ease-in-out forwards alternate;
 }
 .live .live-wrapper .box3 .box3-style4 {
   background: var(--bg-color-blue);
@@ -153,7 +181,7 @@
   top: 70%;
   transform: translate(-50%, -50%);
   transition: 0.3s;
-  animation: boxStyle3 2.5s infinite ease-in-out forwards alternate;
+  animation: boxStyle3 3s infinite ease-in-out forwards alternate;
 }
 .live .live-wrapper .box5 {
   background-color: var(--bg-color-mint);
