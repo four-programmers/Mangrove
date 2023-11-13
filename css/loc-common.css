@@ -106,13 +106,13 @@ a.book:hover {
   --swiper-pagination-bottom: 25px;
 }
 .swiper-pagination-bullet {
-  --swiper-pagination-bullet-width: 6%;
+  --swiper-pagination-bullet-width: 5%;
   max-width: 30px;
   --swiper-pagination-bullet-height: 22px;
   border-bottom: 10px solid white;
   border-top: 10px solid white;
   border-radius: 0;
-  --swiper-pagination-bullet-horizontal-gap:2px;
+  --swiper-pagination-bullet-horizontal-gap: 2px;
 }
 .swiper-pagination-bullet-active {
   --swiper-pagination-color: #000;
